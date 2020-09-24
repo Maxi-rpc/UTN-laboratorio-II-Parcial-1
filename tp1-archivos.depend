@@ -1,0 +1,233 @@
+# depslib dependency file v1.0
+1599881993 source:c:\users\gabri\documents\github\lara-project\tp1-archivos\funciones.cpp
+	<iostream>
+	<windows.h>
+	<string.h>
+	<cstdio>
+	<ctime>
+	"funciones.h"
+	"strUsuario.h"
+	"ui.h"
+
+1599521547 source:c:\users\gabri\documents\github\lara-project\tp1-archivos\main.cpp
+	<iostream>
+	<locale.h>
+	<windows.h>
+	"funciones.h"
+	"strUsuario.h"
+
+1600988885 source:c:\users\maxi\documents\github\lara-project\tp1-archivos\funciones.cpp
+	<iostream>
+	<windows.h>
+	<string.h>
+	<cstdio>
+	<ctime>
+	"funciones.h"
+	"strUsuario.h"
+	"entrenamiento.h"
+	"ui.h"
+
+1600986902 c:\users\maxi\documents\github\lara-project\tp1-archivos\funciones.h
+
+1600906800 c:\users\maxi\documents\github\lara-project\tp1-archivos\strusuario.h
+
+1600987085 source:c:\users\maxi\documents\github\lara-project\tp1-archivos\main.cpp
+	<iostream>
+	<locale.h>
+	<windows.h>
+	"funciones.h"
+	"strUsuario.h"
+
+1598913756 source:c:\users\maxi\documents\github\lara-project\tp1-archivos\fecha.cpp
+	<iostream>
+	"fecha.h"
+
+1598913724 c:\users\maxi\documents\github\lara-project\tp1-archivos\fecha.h
+
+1600988885 source:c:\users\maxi\documents\github\lara-project\tp1-archivos\funcusuarios.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	<cstdio>
+	"funciones.h"
+	"strUsuario.h"
+	"entrenamiento.h"
+
+1599792591 source:c:\users\uhrig\desktop\utn frgp\2° cuatrimestre\laboratorio ii\tp1-archivos\lara-project\tp1-archivos\funcusuarios.cpp
+	<iostream>
+	<windows.h>
+	<cstdio>
+	"funciones.h"
+	"strUsuario.h"
+
+1599793910 c:\users\uhrig\desktop\utn frgp\2° cuatrimestre\laboratorio ii\tp1-archivos\lara-project\tp1-archivos\funciones.h
+
+1599788125 c:\users\uhrig\desktop\utn frgp\2° cuatrimestre\laboratorio ii\tp1-archivos\lara-project\tp1-archivos\strusuario.h
+
+1599788125 source:c:\users\uhrig\desktop\utn frgp\2° cuatrimestre\laboratorio ii\tp1-archivos\lara-project\tp1-archivos\main.cpp
+	<iostream>
+	<locale.h>
+	<windows.h>
+	"funciones.h"
+	"strUsuario.h"
+
+1599792565 source:c:\users\uhrig\desktop\utn frgp\2° cuatrimestre\laboratorio ii\tp1-archivos\lara-project\tp1-archivos\funciones.cpp
+	<iostream>
+	<windows.h>
+	<string.h>
+	<cstdio>
+	"funciones.h"
+	"strUsuario.h"
+	"ui.h"
+
+1600568284 source:c:\users\maxi\documents\github\lara-project\tp1-archivos\ui.cpp
+	<iostream>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1600568284 c:\users\maxi\documents\github\lara-project\tp1-archivos\ui.h
+
+1600568284 c:\users\maxi\documents\github\lara-project\tp1-archivos\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1599788125 c:\users\uhrig\desktop\utn frgp\2° cuatrimestre\laboratorio ii\tp1-archivos\lara-project\tp1-archivos\ui.h
+
+1599788125 source:c:\users\uhrig\desktop\utn frgp\2° cuatrimestre\laboratorio ii\tp1-archivos\lara-project\tp1-archivos\ui.cpp
+	<iostream>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1599788125 c:\users\uhrig\desktop\utn frgp\2° cuatrimestre\laboratorio ii\tp1-archivos\lara-project\tp1-archivos\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1599860555 c:\users\gabri\documents\github\lara-project\tp1-archivos\funciones.h
+
+1599522626 c:\users\gabri\documents\github\lara-project\tp1-archivos\strusuario.h
+
+1599785722 source:c:\users\gabri\documents\github\lara-project\tp1-archivos\ui.cpp
+	<iostream>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1599785722 c:\users\gabri\documents\github\lara-project\tp1-archivos\ui.h
+
+1599785722 c:\users\gabri\documents\github\lara-project\tp1-archivos\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1599880322 source:c:\users\gabri\documents\github\lara-project\tp1-archivos\funcusuarios.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	<cstdio>
+	"funciones.h"
+	"strUsuario.h"
+
+1600988432 source:c:\users\maxi\documents\github\lara-project\tp1-archivos\entrenamiento.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	<cstdio>
+	"entrenamiento.h"
+	"strUsuario.h"
+
+1600991151 c:\users\maxi\documents\github\lara-project\tp1-archivos\entrenamiento.h
+
+1600901614 source:e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-project\tp1-archivos\ui.cpp
+	<iostream>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1600901614 e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-project\tp1-archivos\ui.h
+
+1600901614 e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-project\tp1-archivos\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1600917136 source:e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-project\tp1-archivos\entrenamiento.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	<cstdio>
+	"entrenamiento.h"
+	"strUsuario.h"
+
+1600917136 e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-project\tp1-archivos\entrenamiento.h
+
+1600910003 e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-project\tp1-archivos\strusuario.h
+
+1600986607 source:e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-project\tp1-archivos\funcusuarios.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	<cstdio>
+	"funciones.h"
+	"strUsuario.h"
+	"entrenamiento.h"
+
+1600986566 e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-project\tp1-archivos\funciones.h
+
+1600986673 source:e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-project\tp1-archivos\main.cpp
+	<iostream>
+	<locale.h>
+	<windows.h>
+	"funciones.h"
+	"strUsuario.h"
+
+1600986547 source:e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-project\tp1-archivos\funciones.cpp
+	<iostream>
+	<windows.h>
+	<string.h>
+	<cstdio>
+	<ctime>
+	"funciones.h"
+	"strUsuario.h"
+	"entrenamiento.h"
+	"ui.h"
+
