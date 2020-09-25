@@ -8,7 +8,7 @@ using namespace std;
 #include "strUsuario.h"
 #include "entrenamiento.h"
 #include "ui.h"
-
+#include "ej1.h"
 
 ///Funciones generales
 
@@ -44,7 +44,7 @@ void menuPrincipal(){
                 menuEntrenamientos();
             break;
             case 3:
-                //menuReportes();
+                reporteUno();
             break;
             case 4:
                 menuConfiguracion();

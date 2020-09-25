@@ -231,3 +231,69 @@
 	"entrenamiento.h"
 	"ui.h"
 
+1600991160 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	<cstdio>
+	"entrenamiento.h"
+	"strUsuario.h"
+
+1600991151 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.h
+
+1600906800 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\strusuario.h
+
+1600995706 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\funciones.cpp
+	<iostream>
+	<windows.h>
+	<string.h>
+	<cstdio>
+	<ctime>
+	"funciones.h"
+	"strUsuario.h"
+	"entrenamiento.h"
+	"ui.h"
+	"ej1.h"
+
+1600986902 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\funciones.h
+
+1600568284 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\ui.h
+
+1600988885 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\funcusuarios.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	<cstdio>
+	"funciones.h"
+	"strUsuario.h"
+	"entrenamiento.h"
+
+1600987085 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+	<iostream>
+	<locale.h>
+	<windows.h>
+	"funciones.h"
+	"strUsuario.h"
+
+1600568284 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\ui.cpp
+	<iostream>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1600568284 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1600995678 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\ej1.h
+
