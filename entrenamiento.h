@@ -33,4 +33,5 @@ bool guardarModificacionEnt(Entrenamiento, int);
 void listarPorIdEnt(); // Lista por ID
 void listarPorIdUsuario();
 //void listarPorIdUsuario(reg);
+bool copiaDeSeguridadEntren(); // crea bk entrenamiento.dat
 #endif // ENTRENAMIENTO_H_INCLUDED

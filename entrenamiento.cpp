@@ -4,6 +4,8 @@
 
 using namespace std;
 #include <cstdio>
+#include "rlutil.h"
+#include "ui.h"
 #include "entrenamiento.h"
 #include "strUsuario.h"
 
@@ -323,3 +325,27 @@ void listarPorIdEnt(){
     system("pause");
 }
 */
+//COPIA DE ENTRENAMIENTO.DAT
+bool copiaDeSeguridadEntren(){
+    Entrenamiento reg;
+    FILE *e = fopen("datos/archEntrenamiento.dat", "rb");
+    FILE *Entbk = fopen("datos/archEntrenamientoBK.dat", "wb"); //Seteo a 0 el archivo de bk
+    fclose(Entbk);
+    if(e == NULL){
+        cout << "No se puede leer el archivo.dat .";
+        rlutil::anykey();
+        return false;
+    }
+    while(fread(&reg, sizeof(Entrenamiento), 1, e)){
+        FILE *Ebk = fopen("datos/archEntrenamientoBK.dat", "ab");
+        if(Ebk == NULL){
+            cout << "No se puede guardar.";
+            rlutil::anykey();
+            return false;
+        }
+        fwrite(&reg, sizeof(Entrenamiento), 1, Ebk);
+        fclose(Ebk);
+    }
+    fclose(e);
+    return true;
+}

@@ -297,3 +297,96 @@
 
 1600995678 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\ej1.h
 
+1605883970 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\ej1.cpp
+	<iostream>
+	<windows.h>
+	<string.h>
+	<cstdio>
+	<ctime>
+	"funciones.h"
+	"strUsuario.h"
+	"entrenamiento.h"
+	"ui.h"
+	"ej1.h"
+
+1605903633 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\funciones.h
+
+1605903633 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\strusuario.h
+
+1605903633 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.h
+
+1605898465 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\ui.h
+
+1605883970 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\ej1.h
+
+1605903809 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	<cstdio>
+	"rlutil.h"
+	"ui.h"
+	"entrenamiento.h"
+	"strUsuario.h"
+
+1605903753 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\funciones.cpp
+	<iostream>
+	<windows.h>
+	<string.h>
+	<cstdio>
+	<ctime>
+	"funciones.h"
+	"strUsuario.h"
+	"entrenamiento.h"
+	"rlutil.h"
+	"ui.h"
+	"carteles.h"
+	"ej1.h"
+
+1605898015 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\funcusuarios.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	<cstdio>
+	"funciones.h"
+	"strUsuario.h"
+	"entrenamiento.h"
+
+1605898500 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\ui.cpp
+	<iostream>
+	<iomanip>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1601305701 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1605897970 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+	<iostream>
+	<locale.h>
+	<windows.h>
+	"ui.h"
+	"rlutil.h"
+	"funciones.h"
+	"strUsuario.h"
+
+1605903633 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\carteles.h
+
+1605903648 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\carteles.cpp
+	<iostream>
+	"ui.h"
+	"rlutil.h"
+	"carteles.h"
+

@@ -4,6 +4,8 @@
 
 using namespace std;
 #include <cstdio>
+#include "rlutil.h"
+#include "ui.h"
 #include "funciones.h"
 #include "strUsuario.h"
 #include "entrenamiento.h"
@@ -11,36 +13,33 @@ using namespace std;
 const char *FILEUSUARIOS = "datos/archUsuarios.dat";
 
 Usuario cargarDatos(){
-    system("cls");
     Usuario user;
-    cout<<"Ingresar ID: ";
+    cout << "Completar los siguientes datos" << endl;
+    cout << "Ingresar ID: ";
     cin>>user.id;
     while(buscarUsuario(user.id) >= 0){
         cout << "ID existente, reingresar: ";
         cin >> user.id;
     }
-    validarNombre(user.nombre);
-
-    validarApellido(user.apellido);
-
+    cout << "Nombre: ";
+    cin >> user.nombre;
+    cout << "Apellido: ";
+    cin >> user.apellido;
+    cout << "Fecha de Nacimiento: ";
     user.nacimiento = cargarFecha();
-
-    user.altura = validarAltura();
-
-    user.peso = validarPeso();
-
-    user.actividad = validarPerfilA();
-
-    user.aptoMedico = validarAptoM();
-
+    cout << "Altura: ";
+    cin >> user.altura;
+    cout << "Peso: ";
+    cin >> user.peso;
+    cout << "Apto Medico: (INGRESAR 1 o 0)";
+    cin >> user.aptoMedico;
     user.estado = true;
 
     return user;
 }
 
 void mostrarDatos(Usuario reg){
-    cout << endl;
-    cout << "----------" << endl;
+    string apto[2] = {"Aprobado","No Aprobado"};
     cout << "ID: " << reg.id << endl;
     cout << "Nombre: " << reg.nombre << endl;
     cout << "Apellido: " << reg.apellido << endl;
@@ -48,11 +47,7 @@ void mostrarDatos(Usuario reg){
     cout << "Altura: " << reg.altura << endl;
     cout << "Peso: " << reg.peso << " Kg" << endl;
     cout << "Perfil de Actividad: " << reg.actividad << endl;
-    if(reg.aptoMedico){
-        cout << "Apto Medico: Aprobado"<< endl;
-    } else {
-        cout << "Apto Medico: No Aprobado"<< endl;
-    }
+    cout << "Apto Medico: " << apto[reg.aptoMedico-1];
 }
 
 Fecha cargarFecha(){
@@ -216,15 +211,15 @@ void modificarUser(){
         switch(opc){
             case 1:
                 cout << "Nuevo Peso" << endl;
-                user.peso = validarPeso();
+                user.peso;
             break;
             case 2:
                 cout << "Nueva Actividad" << endl;
-                user.actividad = validarPerfilA();
+                user.actividad;
             break;
             case 3:
                 cout << "Nuevo Apto medico" << endl;
-                user.aptoMedico = validarAptoM;
+                user.aptoMedico;
             break;
         }
         guardarModificacion(user, pos);
@@ -279,45 +274,28 @@ bool guardarModificacion(Usuario user, int pos){
 
 
 /// BACKUP DE ARCHIVO.DAT
-void copiaDeSeguridad(){
+bool copiaDeSeguridadUsuario(){
     Usuario user;
     FILE *f = fopen(FILEUSUARIOS, "rb");
     FILE *backup = fopen("datos/archUsuariosBK.dat", "wb"); //Seteo a 0 el archivo de bk
     fclose(backup);
     if(f == NULL){
         cout << "No se puede leer el archivo.dat .";
+        rlutil::anykey();
+        return false;
     }
     while(fread(&user, sizeof(Usuario), 1, f)){
         FILE *bk = fopen("datos/archUsuariosBK.dat", "ab");
         if(bk == NULL){
             cout << "No se puede guardar.";
+            rlutil::anykey();
+            return false;
         }
         fwrite(&user, sizeof(Usuario), 1, bk);
         fclose(bk);
     }
     fclose(f);
-    cout << "Se CREO copia de seguridad USUARIO.DAT" << endl;
-    system("pause");
-
-    //COPIA DE ENTRENAMIENTO.DAT
-    Entrenamiento reg;
-    FILE *e = fopen("datos/archEntrenamiento.dat", "rb");
-    FILE *Entbk = fopen("datos/archEntrenamientoBK.dat", "wb"); //Seteo a 0 el archivo de bk
-    fclose(Entbk);
-    if(e == NULL){
-        cout << "No se puede leer el archivo.dat .";
-    }
-    while(fread(&reg, sizeof(Entrenamiento), 1, e)){
-        FILE *Ebk = fopen("datos/archEntrenamientoBK.dat", "ab");
-        if(Ebk == NULL){
-            cout << "No se puede guardar.";
-        }
-        fwrite(&reg, sizeof(Entrenamiento), 1, Ebk);
-        fclose(Ebk);
-    }
-    fclose(e);
-    cout << "Se CREO copia de seguridad Entrenamiento BK" << endl;
-    system("pause");
+    return true;
 }
 
 void restaurarCopia(){

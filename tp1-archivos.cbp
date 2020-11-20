@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="carteles.cpp" />
+		<Unit filename="carteles.h" />
 		<Unit filename="ej1.cpp" />
 		<Unit filename="ej1.h" />
 		<Unit filename="entrenamiento.cpp" />

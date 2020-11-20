@@ -9,14 +9,7 @@ void menuUsuarios();
 void menuEntrenamientos();
 void menuConfiguracion();
 
-///Funciones de verificacion de datos
-void validarNombre(char[50]);
-void validarApellido(char[50]);
-float validarAltura();
-float validarPeso();
-char validarPerfilA();
-bool validarAptoM();
-void verificarFecha(int, int, int);
-
+///Funciones extras
+void copiaDeSeguridad(); // Realiza bk de todos los archivos.dat
 
 #endif // FUNCIONES_H_INCLUDED

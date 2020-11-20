@@ -36,7 +36,7 @@ void modificarUser();
 bool eliminarUser();
 bool guardarModificacion(Usuario, int);
 /// BACKUP DE ARCHIVO.DAT
-void copiaDeSeguridad();
+bool copiaDeSeguridadUsuario();
 void restaurarCopia();
 
 #endif // STRUSUARIO_H_INCLUDED
