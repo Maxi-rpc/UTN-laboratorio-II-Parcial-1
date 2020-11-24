@@ -3,10 +3,10 @@
 #include "ui.h"
 #include "rlutil.h"
 using namespace std;
-
+#include "menu.h"
 int main()
 {
-    int modoDev = 0;
+    int modoDev = 0; // en 0 , inicia el programa normal, valor 1 inicia el modo de test
     if(modoDev == 0){
         initUI();
         menuPrincipal();

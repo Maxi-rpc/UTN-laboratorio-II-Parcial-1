@@ -373,14 +373,12 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1605897970 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+1606230052 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
 	<iostream>
-	<locale.h>
 	<windows.h>
 	"ui.h"
 	"rlutil.h"
-	"funciones.h"
-	"strUsuario.h"
+	"menu.h"
 
 1605903633 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\carteles.h
 
@@ -389,4 +387,23 @@
 	"ui.h"
 	"rlutil.h"
 	"carteles.h"
+
+1606230250 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
+	<iostream>
+	<windows.h>
+	"ui.h"
+	"rlutil.h"
+	"menu.h"
+	"cartel.h"
+
+1606228424 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.h
+
+1606229995 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.h
+
+1606230019 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
+	<iostream>
+	<windows.h>
+	"ui.h"
+	"rlutil.h"
+	"cartel.h"
 
