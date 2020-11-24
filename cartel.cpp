@@ -20,14 +20,14 @@ void cLinea(int cantidad){ // Determinamos la cantidad de repeticiones
     for(int i=0; i<cantidad; i++){
         lineas += linea;
     }
-    cout << endl;
     cout << lineas << endl;
 }
 
 void cMsj(int modo){
-    if(modo == 1){msj("SE GUARDO CORRECTO", rlutil::WHITE, rlutil::GREEN);};
+    if(modo == 1){msj("SE GUARDO CON EXITO", rlutil::WHITE, rlutil::GREEN);};
     if(modo == 2){msj("ERROR AL GUARDAR", rlutil::WHITE, rlutil::RED);};
     if(modo == 3){msj("OPCIÓN INCORRECTA", rlutil::WHITE, rlutil::RED);};
+    if(modo == 4){msj("NO EXISTE ID", rlutil::WHITE, rlutil::RED);};
 }
 
 void cMenu(){

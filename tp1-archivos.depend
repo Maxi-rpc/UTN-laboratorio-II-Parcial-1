@@ -373,7 +373,7 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1606238565 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+1606239305 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -389,19 +389,20 @@
 	"rlutil.h"
 	"carteles.h"
 
-1606233811 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
+1606242197 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
 	"rlutil.h"
 	"menu.h"
 	"cartel.h"
+	"usuario.h"
 
-1606228424 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.h
+1606242123 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.h
 
 1606229995 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.h
 
-1606230019 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
+1606242123 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -416,7 +417,7 @@
 
 1606233810 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\fecha.h
 
-1606238229 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\usuario.h
+1606242123 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\usuario.h
 	"fecha.h"
 
 1606238627 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\usuario.cpp

@@ -4,43 +4,44 @@
 #include "rlutil.h"
 using namespace std;
 #include "usuario.h"
+#include "cartel.h"
 
 Usuario cargarDatos(){
-    Usuario u;
+    Usuario user;
     cout << "INGRESAR LOS SIGUIENTES DATOS:" << endl;
     cout << "ID: ";
-    cin >> u.id;
+    cin >> user.id;
     cout << "NOMBRES: ";
-    cin >> u.nombres;
+    cin >> user.nombres;
     cout << "APELLIDOS: ";
-    cin >> u.apellidos;
+    cin >> user.apellidos;
     cout << "FECHA DE NACIMIENTO: " << endl;
-    u.nacimiento = cargarFecha();
+    user.nacimiento = cargarFecha();
     cout << "ALTURA: ";
-    cin >> u.altura;
+    cin >> user.altura;
     cout << "PESO: ";
-    cin >> u.peso;
+    cin >> user.peso;
     cout << "PERFIL DE ACTIVIDAD: ";
-    cin >> u.perfilActividad;
+    cin >> user.perfilActividad;
     cout << "APTO MEDICO 1 / 0 : ";
-    cin >> u.aptoMedico;
-    u.estado = true;
+    cin >> user.aptoMedico;
+    user.estado = true;
 
-    return u;
+    return user;
 }
 
-void mostrarDatos(Usuario u, int modo){
+void mostrarDatos(Usuario user, int modo){
     if(modo == 1){
-        cout << "ID: " << u.id << endl;
-        cout << "NOMBRES: " << u.nombres << endl;
-        cout << "APELLIDOS: " << u.apellidos << endl;
-        cout << "FECHA DE NACIMIENTO: " << u.nacimiento.dia << " / " << u.nacimiento.mes << " / " << u.nacimiento.anio << endl;
-        cout << "ALTURA: " << u.altura << endl;
-        cout << "PESO: " << u.peso << endl;
-        cout << "PERFIL DE ACTIVIDAD: " << u.perfilActividad << endl;
-        cout << "APTO MEDICO: " << u.aptoMedico << endl;
+        cout << "ID: " << user.id << endl;
+        cout << "NOMBRES: " << user.nombres << endl;
+        cout << "APELLIDOS: " << user.apellidos << endl;
+        cout << "FECHA DE NACIMIENTO: " << user.nacimiento.dia << " / " << user.nacimiento.mes << " / " << user.nacimiento.anio << endl;
+        cout << "ALTURA: " << user.altura << endl;
+        cout << "PESO: " << user.peso << endl;
+        cout << "PERFIL DE ACTIVIDAD: " << user.perfilActividad << endl;
+        cout << "APTO MEDICO: " << user.aptoMedico << endl;
         cout << "ESTADO: ";
-        if(u.estado){cout << "ACTIVO";}
+        if(user.estado){cout << "ACTIVO";}
         else{cout << "INACTIVO";}
     }
 
@@ -101,4 +102,47 @@ int cantidadUsuarios(){
     fclose(f);
     cant = bytes / sizeof(Usuario);
     return cant;
+}
+
+Usuario modUsuario(int pos){
+    cout << "USUARIO A MODIFICAR: " << endl;
+    cLinea();
+    Usuario user = leerUsuario(pos);
+    mostrarDatos(user,1);
+    cout << endl;
+    cLinea();
+    cout << "INGRESAR OPCIÓN A MODIFICAR: " << endl;
+    cout << "1) PESO" << endl;
+    cout << "2) ACTIVIDAD" << endl;
+    cout << "3) APTO MÉDICO" << endl;
+    int opc;
+    cin >> opc;
+    switch(opc){
+        case 1:
+            cout << "NUEVO PESO: ";
+            cin >> user.peso;
+        break;
+        case 2:
+            cout << "NUEVA ACTIVIDAD: ";
+            cin >> user.perfilActividad;
+        break;
+        case 3:
+            cout << "NUEVO APTO MÉDICO: ";
+            cin >> user.aptoMedico;
+        break;
+    }
+    return user;
+}
+
+bool guardarModificacion(Usuario user, int pos){
+    bool guardo;
+    FILE *f = fopen("datos/usuario.dat", "rb+");
+    if(f == NULL){
+        cout << "No se puede modificar usuario.dat.";
+        return false;
+    }
+    fseek(f, pos *sizeof(Usuario), SEEK_SET);
+    guardo = fwrite(&user, sizeof(Usuario), 1, f);
+    fclose(f);
+    return guardo;
 }

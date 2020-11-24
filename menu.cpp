@@ -5,6 +5,8 @@
 using namespace std;
 #include "menu.h"
 #include "cartel.h"
+// STRUCT
+#include "usuario.h"
 
 void menuPrincipal(){
     bool menu = true;
@@ -52,10 +54,10 @@ void menuUsuario(){
         }
         switch(opc){
             case 1:
-                //menuUsuario();
+                crearUsuario();
             break;
             case 2:
-                //menuEntrenamiento();
+                modificarUsuario();
             break;
             case 3:
                 //menuReporte();
@@ -85,4 +87,30 @@ void menuReporte(){
 
 void menuConfiguracion(){
 
+}
+
+// SUB MENU USUARIO
+void crearUsuario(){
+    cTitulo("NUEVO USUARIO");
+    Usuario u = cargarDatos();
+    if(guardarUsuario(u)){
+        cMsj(1);
+    } else {
+        cMsj(2);
+    }
+}
+
+void modificarUsuario(){
+    int codigo, pos;
+    cTitulo("MODIFICAR USUARIO");
+    cout << "INGRESAR ID: ";
+    cin >> codigo;
+    pos = buscarUsuario(codigo);
+    if(pos >= 0){
+        Usuario user = modUsuario(pos);
+        if(guardarModificacion(user, pos)){cMsj(1);}
+        else{cMsj(2);}
+    } else {
+        cMsj(4);
+    }
 }
