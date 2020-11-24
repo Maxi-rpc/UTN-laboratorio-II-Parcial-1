@@ -92,7 +92,7 @@ void menuConfiguracion(){
 // SUB MENU USUARIO
 void crearUsuario(){
     cTitulo("NUEVO USUARIO");
-    Usuario u = cargarDatos();
+    Usuario u = cargarUsuario();
     if(guardarUsuario(u)){
         cMsj(1);
     } else {
@@ -122,7 +122,7 @@ void listarUsuarioPorID(){
     if(pos >= 0){
         Usuario user = leerUsuario(pos);
         if(user.estado == true){
-            mostrarDatos(user,1);
+            mostrarUsuario(user,1);
             cMsj(6);
         }else{cMsj(7);}
     }else {cMsj(4);}
@@ -133,7 +133,7 @@ void listarTodoLosUsuarios(){
     cTitulo("LISTAR TODO LOS USUARIOS");
     for(int i=0; i<cant; i++){
         Usuario user = leerUsuario(i);
-        mostrarDatos(user,1);
+        mostrarUsuario(user,1);
         cout << endl;
         cLinea();
     }

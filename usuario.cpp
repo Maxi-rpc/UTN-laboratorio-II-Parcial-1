@@ -7,7 +7,7 @@ using namespace std;
 #include "usuario.h"
 #include "cartel.h"
 
-Usuario cargarDatos(){
+Usuario cargarUsuario(){
     Usuario user;
     cout << "INGRESAR LOS SIGUIENTES DATOS:" << endl;
     cout << "ID: ";
@@ -31,7 +31,7 @@ Usuario cargarDatos(){
     return user;
 }
 
-void mostrarDatos(Usuario user, int modo){
+void mostrarUsuario(Usuario user, int modo){
     if(modo == 1){
         cout << "ID: " << user.id << endl;
         cout << "NOMBRES: " << user.nombres << endl;
@@ -109,7 +109,7 @@ Usuario modUsuario(int pos){
     cout << "USUARIO A MODIFICAR: " << endl;
     cLinea();
     Usuario user = leerUsuario(pos);
-    mostrarDatos(user,1);
+    mostrarUsuario(user,1);
     cout << endl;
     cLinea();
     cout << "INGRESAR OPCIÓN A MODIFICAR: " << endl;
@@ -154,7 +154,7 @@ Usuario elimUsuario(int pos){
     cout << "USUARIO A ELIMINAR: " << endl;
     cLinea();
     Usuario user = leerUsuario(pos);
-    mostrarDatos(user,1);
+    mostrarUsuario(user,1);
     cout << endl;
     cLinea();
     cout << "ELIMINAR USUARIO?" << endl;

@@ -13,8 +13,8 @@ struct Usuario {
     bool estado;
 };
 
-Usuario cargarDatos(); // Carga los datos de un user
-void mostrarDatos(Usuario, int modo); // Muestra el reg de un user
+Usuario cargarUsuario(); // Carga los datos de un user
+void mostrarUsuario(Usuario, int modo); // Muestra el reg de un user
 bool guardarUsuario(Usuario); // Guarda el registro de un user dentro de usuario.dat
 Usuario leerUsuario(int pos); // Lee el reg del usuario por la posicion
 int buscarUsuario(int id); // Busca el usuario y devuelve la posicion
