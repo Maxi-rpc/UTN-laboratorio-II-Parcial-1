@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <iomanip>
 #include "ui.h"
 #include "rlutil.h"
 using namespace std;

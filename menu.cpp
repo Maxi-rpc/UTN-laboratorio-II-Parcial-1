@@ -63,7 +63,7 @@ void menuUsuario(){
                 listarUsuarioPorID();
             break;
             case 4:
-                //menuConfiguracion();
+                listarTodoLosUsuarios();
             break;
             case 5:
                 //menuConfiguracion();
@@ -128,3 +128,14 @@ void listarUsuarioPorID(){
     }else {cMsj(4);}
 }
 
+void listarTodoLosUsuarios(){
+    int cant = cantidadUsuarios();
+    cTitulo("LISTAR TODO LOS USUARIOS");
+    for(int i=0; i<cant; i++){
+        Usuario user = leerUsuario(i);
+        mostrarDatos(user,1);
+        cout << endl;
+        cLinea();
+    }
+    cMsj(6);
+}

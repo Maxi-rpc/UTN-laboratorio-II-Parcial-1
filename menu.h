@@ -11,6 +11,7 @@ void menuConfiguracion();
 void crearUsuario();
 void modificarUsuario();
 void listarUsuarioPorID();
+void listarTodoLosUsuarios();
 // SUB MENU ENTRENAMIENTO
 
 // SUB MENU REPORTE

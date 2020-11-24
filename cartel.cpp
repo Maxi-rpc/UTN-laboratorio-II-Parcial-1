@@ -1,5 +1,6 @@
 #include <iostream>
-#include <windows.h> ///Para funciones system
+#include <windows.h>
+#include <iomanip>
 #include "ui.h"
 #include "rlutil.h"
 using namespace std;
