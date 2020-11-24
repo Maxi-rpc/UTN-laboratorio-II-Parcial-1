@@ -52,16 +52,19 @@ void menuUsuario(){
         }
         switch(opc){
             case 1:
-                menuUsuario();
+                //menuUsuario();
             break;
             case 2:
-                menuEntrenamiento();
+                //menuEntrenamiento();
             break;
             case 3:
-                menuReporte();
+                //menuReporte();
             break;
             case 4:
-                menuConfiguracion();
+                //menuConfiguracion();
+            break;
+            case 5:
+                //menuConfiguracion();
             break;
             case 0:
                 menu = false;
