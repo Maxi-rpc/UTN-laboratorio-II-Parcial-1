@@ -34,6 +34,8 @@
 		</Compiler>
 		<Unit filename="cartel.cpp" />
 		<Unit filename="cartel.h" />
+		<Unit filename="entrenamiento.cpp" />
+		<Unit filename="entrenamiento.h" />
 		<Unit filename="fecha.cpp" />
 		<Unit filename="fecha.h" />
 		<Unit filename="main.cpp" />

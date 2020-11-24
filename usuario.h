@@ -20,7 +20,7 @@ Usuario leerUsuario(int pos); // Lee el reg del usuario por la posicion
 int buscarUsuario(int id); // Busca el usuario y devuelve la posicion
 int cantidadUsuarios(); // Indica la cantidad total de usuarios registrados
 Usuario modUsuario(int pos); // Modifica un usuario
-bool guardarModificacion(Usuario, int); // Guarda las modificaciones en la pos del usuario
+bool guardarModificacion(Usuario, int pos); // Guarda las modificaciones en la pos del usuario
 Usuario elimUsuario(int pos); // Elimina un usuario
 
 #endif // USUARIO_H_INCLUDED

@@ -14,7 +14,10 @@ struct Entrenamiento{
 Entrenamiento cargarEntrenamiento();
 void mostrarEnt(Entrenamiento);
 bool guardarEntren(Entrenamiento); // Guarda el registro de ENTRENAMIENTO dentro de entrenamiento.dat
-
+Entrenamiento leerEntren(int pos); //lee el archivo y devuelve un reg
+int buscarEnt(int id); // Busca el entrenamiento ID y devuelve la posicion
 int cantidadEntren(); // Indica la cantidad total de entrenamientos registrados
+Entrenamiento modificarEnt(int pos); // Modifica entrenamiento
+bool guardarModificacionEnt(Entrenamiento, int pos); // Guarda el reg en la pos del entrenamiento
 
 #endif // ENTRENAMIENTO_H_INCLUDED

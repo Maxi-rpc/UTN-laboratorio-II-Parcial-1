@@ -191,7 +191,16 @@ void crearEntrenamiento(){
 }
 
 void modificarEntrenamiento(){
-
+    int id, pos;
+    cTitulo("MODIFICAR ENTRENAMIENTO");
+    cout << "INGRESAR ID: ";
+    cin >> id;
+    pos = buscarEnt(id);
+    if(pos >= 0){
+        Entrenamiento reg = modificarEnt(pos);
+        if(guardarModificacionEnt(reg, pos)){cMsj(1);}
+        else{cMsj(2);}
+    } else {cMsj(4);}
 }
 
 void listarEntrenamientoPorID(){

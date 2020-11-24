@@ -72,3 +72,74 @@ int cantidadEntren(){
     return cant;
 }
 
+int buscarEnt(int id){
+    int pos=0;
+    Entrenamiento reg;
+    FILE *f = fopen("datos/entrenamiento.dat", "rb");
+    if(f == NULL){
+        cout << "No se puede leer el entrenamiento.dat.";
+        return -1;
+    }
+    while(fread(&reg, sizeof(Entrenamiento), 1, f)){
+        if(id == reg.id){
+            fclose(f);
+            return pos;
+        }
+        pos++;
+    }
+    fclose(f);
+    return -1;
+}
+
+Entrenamiento leerEntren(int pos){
+    Entrenamiento reg;
+    FILE *f = fopen("datos/entrenamiento.dat", "rb");
+    if(f == NULL){
+        reg.id = 0;
+        return reg;
+    }
+    fseek(f, pos *sizeof(Entrenamiento), SEEK_SET);
+    fread(&reg, sizeof(Entrenamiento), 1, f);
+    fclose(f);
+    return reg;
+}
+
+Entrenamiento modificarEnt(int pos){
+    cout << "ENTRENAMIENTO A MODIFICAR: " << endl;
+    cLinea();
+    Entrenamiento reg = leerEntren(pos);
+    mostrarEnt(reg);
+    cout << endl;
+    cLinea();
+    cout << "INGRESAR OPCIÓN A MODIFICAR: " << endl;
+    cout << "1) TIEMPO" << endl;
+    cout << "2) CALORÍAS" << endl;
+    int opc;
+    cin >> opc;
+    switch(opc){
+        case 1:
+            cout << "NUEVO TIEMPO: ";
+            cin >> reg.tiempo;
+        break;
+        case 2:
+            cout << "NUEVA CALORÍAS: ";
+            cin >> reg.calorias;
+        break;
+        default: cMsj(3);
+        break;
+    }
+    return reg;
+}
+
+bool guardarModificacionEnt(Entrenamiento reg, int pos){
+    bool guardo;
+    FILE *f = fopen("datos/entrenamiento.dat", "rb+");
+    if(f == NULL){
+        cout << "No se puede modificar.";
+        return false;
+    }
+    fseek(f, pos *sizeof(Entrenamiento), SEEK_SET);
+    guardo = fwrite(&reg, sizeof(Entrenamiento), 1, f);
+    fclose(f);
+    return guardo;
+}
