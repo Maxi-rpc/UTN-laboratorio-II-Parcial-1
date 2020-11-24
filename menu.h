@@ -12,6 +12,7 @@ void crearUsuario();
 void modificarUsuario();
 void listarUsuarioPorID();
 void listarTodoLosUsuarios();
+void eliminarUsuario();
 // SUB MENU ENTRENAMIENTO
 
 // SUB MENU REPORTE

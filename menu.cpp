@@ -66,7 +66,7 @@ void menuUsuario(){
                 listarTodoLosUsuarios();
             break;
             case 5:
-                //menuConfiguracion();
+                eliminarUsuario();
             break;
             case 0:
                 menu = false;
@@ -139,3 +139,17 @@ void listarTodoLosUsuarios(){
     }
     cMsj(6);
 }
+
+void eliminarUsuario(){
+    int id, pos;
+    cTitulo("ELIMINAR USUARIO");
+    cout << "INGRESAR ID: ";
+    cin >> id;
+    pos = buscarUsuario(id);
+    if(pos >= 0){
+        Usuario user = elimUsuario(pos);
+        if(guardarModificacion(user, pos)){cMsj(1);}
+        else{cMsj(2);}
+    } else {cMsj(4);}
+}
+

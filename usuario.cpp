@@ -131,6 +131,8 @@ Usuario modUsuario(int pos){
             cout << "NUEVO APTO MÉDICO: ";
             cin >> user.aptoMedico;
         break;
+        default: cMsj(3);
+        break;
     }
     return user;
 }
@@ -146,4 +148,29 @@ bool guardarModificacion(Usuario user, int pos){
     guardo = fwrite(&user, sizeof(Usuario), 1, f);
     fclose(f);
     return guardo;
+}
+
+Usuario elimUsuario(int pos){
+    cout << "USUARIO A ELIMINAR: " << endl;
+    cLinea();
+    Usuario user = leerUsuario(pos);
+    mostrarDatos(user,1);
+    cout << endl;
+    cLinea();
+    cout << "ELIMINAR USUARIO?" << endl;
+    cout << "1) SI" << endl;
+    cout << "2) NO" << endl;
+    int opc;
+    cin >> opc;
+    switch(opc){
+        case 1:
+            user.estado = false;
+        break;
+        case 2:
+            user.estado = true;
+        break;
+        default: cMsj(3);
+        break;
+    }
+    return user;
 }
