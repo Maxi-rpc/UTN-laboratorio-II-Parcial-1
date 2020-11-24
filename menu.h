@@ -14,7 +14,11 @@ void listarUsuarioPorID();
 void listarTodoLosUsuarios();
 void eliminarUsuario();
 // SUB MENU ENTRENAMIENTO
-
+void crearEntrenamiento();
+void modificarEntrenamiento();
+void listarEntrenamientoPorID();
+void listarEntrenamientoPorIDUsuario();
+void listarTodoLosEntrenamientos();
 // SUB MENU REPORTE
 
 // SUB MENU CONFIGURACION

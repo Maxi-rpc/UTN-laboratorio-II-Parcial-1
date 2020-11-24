@@ -7,7 +7,7 @@ using namespace std;
 #include "cartel.h"
 // STRUCT
 #include "usuario.h"
-
+#include "entrenamiento.h"
 void menuPrincipal(){
     bool menu = true;
     int opc;
@@ -78,7 +78,39 @@ void menuUsuario(){
 }
 
 void menuEntrenamiento(){
-
+    bool menu = true;
+    int opc;
+    while(menu){
+        cMenuEntrenamiento();
+        while(!(cin >> opc)){
+            cMsj(3);
+            cin.clear();
+            cin.ignore(123, '\n');
+            cMenuEntrenamiento();
+        }
+        switch(opc){
+            case 1:
+                crearEntrenamiento();
+            break;
+            case 2:
+                modificarEntrenamiento();
+            break;
+            case 3:
+                listarEntrenamientoPorID();
+            break;
+            case 4:
+                listarEntrenamientoPorIDUsuario();
+            break;
+            case 5:
+                listarTodoLosEntrenamientos();
+            break;
+            case 0:
+                menu = false;
+            break;
+            default: cMsj(3);
+            break;
+        }
+    }
 }
 
 void menuReporte(){
@@ -93,11 +125,8 @@ void menuConfiguracion(){
 void crearUsuario(){
     cTitulo("NUEVO USUARIO");
     Usuario u = cargarUsuario();
-    if(guardarUsuario(u)){
-        cMsj(1);
-    } else {
-        cMsj(2);
-    }
+    if(guardarUsuario(u)){cMsj(1);}
+    else {cMsj(2);}
 }
 
 void modificarUsuario(){
@@ -151,5 +180,29 @@ void eliminarUsuario(){
         if(guardarModificacion(user, pos)){cMsj(1);}
         else{cMsj(2);}
     } else {cMsj(4);}
+}
+
+// SUB MENU ENTRENAMIENTO
+void crearEntrenamiento(){
+    cTitulo("CREAR ENTRENAMIENTO");
+    Entrenamiento reg = cargarEntrenamiento();
+    if(guardarEntren(reg)){cMsj(1);}
+    else{cMsj(2);}
+}
+
+void modificarEntrenamiento(){
+
+}
+
+void listarEntrenamientoPorID(){
+
+}
+
+void listarEntrenamientoPorIDUsuario(){
+
+}
+
+void listarTodoLosEntrenamientos(){
+
 }
 

@@ -57,3 +57,16 @@ void cMenuUsuario(){
     cout << endl;
     cout << "> ";
 }
+
+void cMenuEntrenamiento(){
+    cTitulo("MENÚ ENTRENAMIENTOS");
+    cout << "1) NUEVO ENTRENAMIENTO" << endl;
+    cout << "2) MODIFICAR ENTRENAMIENTO" << endl;
+    cout << "3) LISTAR ENTRENAMIENTO POR ID" << endl;
+    cout << "4) LISTAR ENTRENAMIENTO POR ID USUARIO" << endl;
+    cout << "5) LISTAR TODOS LOS ENTRENAMIENTOS" << endl;
+    cLinea();
+    cout << "0) VOLVER AL MENÚ PRINCIPAL" << endl;
+    cout << endl;
+    cout << "> ";
+}

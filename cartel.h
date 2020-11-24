@@ -9,5 +9,6 @@ void cMsj(int modo); // MSJ DINAMICO
 // MENU
 void cMenu();
 void cMenuUsuario();
+void cMenuEntrenamiento();
 
 #endif // CARTEL_H_INCLUDED

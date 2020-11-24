@@ -9,7 +9,7 @@ using namespace std;
 
 Usuario cargarUsuario(){
     Usuario user;
-    cout << "INGRESAR LOS SIGUIENTES DATOS:" << endl;
+    cout << "INGRESAR LOS SIGUIENTES DATOS" << endl;
     cout << "ID: ";
     cin >> user.id;
     cout << "NOMBRES: ";
