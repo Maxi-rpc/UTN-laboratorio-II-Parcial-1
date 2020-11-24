@@ -60,7 +60,7 @@ void menuUsuario(){
                 modificarUsuario();
             break;
             case 3:
-                //menuReporte();
+                listarUsuarioPorID();
             break;
             case 4:
                 //menuConfiguracion();
@@ -101,16 +101,30 @@ void crearUsuario(){
 }
 
 void modificarUsuario(){
-    int codigo, pos;
+    int id, pos;
     cTitulo("MODIFICAR USUARIO");
     cout << "INGRESAR ID: ";
-    cin >> codigo;
-    pos = buscarUsuario(codigo);
+    cin >> id;
+    pos = buscarUsuario(id);
     if(pos >= 0){
         Usuario user = modUsuario(pos);
         if(guardarModificacion(user, pos)){cMsj(1);}
         else{cMsj(2);}
-    } else {
-        cMsj(4);
-    }
+    } else {cMsj(4);}
 }
+
+void listarUsuarioPorID(){
+    int id, pos;
+    cTitulo("LISTAR USUARIO POR ID");
+    cout << "INGRESAR ID: ";
+    cin >> id;
+    pos = buscarUsuario(id);
+    if(pos >= 0){
+        Usuario user = leerUsuario(pos);
+        if(user.estado == true){
+            mostrarDatos(user,1);
+            cMsj(6);
+        }else{cMsj(7);}
+    }else {cMsj(4);}
+}
+

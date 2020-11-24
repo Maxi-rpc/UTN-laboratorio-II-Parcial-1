@@ -10,6 +10,7 @@ void menuConfiguracion();
 // SUB MENU USUARIO
 void crearUsuario();
 void modificarUsuario();
+void listarUsuarioPorID();
 // SUB MENU ENTRENAMIENTO
 
 // SUB MENU REPORTE

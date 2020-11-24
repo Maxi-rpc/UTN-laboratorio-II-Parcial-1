@@ -28,6 +28,8 @@ void cMsj(int modo){
     if(modo == 2){msj("ERROR AL GUARDAR", rlutil::WHITE, rlutil::RED);};
     if(modo == 3){msj("OPCIÓN INCORRECTA", rlutil::WHITE, rlutil::RED);};
     if(modo == 4){msj("NO EXISTE ID", rlutil::WHITE, rlutil::RED);};
+    if(modo == 6){msj("PRESIONE UNA TECLA PARA VOLVER", rlutil::WHITE, rlutil::GREEN);};
+    if(modo == 7){msj("USUARIO INACTIVO", rlutil::WHITE, rlutil::RED);};
 }
 
 void cMenu(){
