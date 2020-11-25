@@ -25,12 +25,17 @@ void cLinea(int cantidad){ // Determinamos la cantidad de repeticiones
 }
 
 void cMsj(int modo){
-    if(modo == 1){msj("SE GUARDO CON EXITO", rlutil::WHITE, rlutil::GREEN);};
-    if(modo == 2){msj("ERROR AL GUARDAR", rlutil::WHITE, rlutil::RED);};
-    if(modo == 3){msj("OPCIÓN INCORRECTA", rlutil::WHITE, rlutil::RED);};
-    if(modo == 4){msj("NO EXISTE ID", rlutil::WHITE, rlutil::RED);};
-    if(modo == 6){msj("PRESIONE UNA TECLA PARA VOLVER", rlutil::WHITE, rlutil::GREEN);};
-    if(modo == 7){msj("USUARIO INACTIVO", rlutil::WHITE, rlutil::RED);};
+    if(modo == 1){msj("SE GUARDO CON EXITO", rlutil::WHITE, rlutil::GREEN);}
+    if(modo == 2){msj("ERROR AL GUARDAR", rlutil::WHITE, rlutil::RED);}
+    if(modo == 3){msj("OPCIÓN INCORRECTA", rlutil::WHITE, rlutil::RED);}
+    if(modo == 4){msj("NO EXISTE ID", rlutil::WHITE, rlutil::RED);}
+    if(modo == 6){msj("PRESIONE UNA TECLA PARA VOLVER", rlutil::WHITE, rlutil::GREEN);}
+    if(modo == 7){msj("USUARIO INACTIVO", rlutil::WHITE, rlutil::RED);}
+    if(modo == 8){msj("SE CREO CON ÉXITO LA COPIA DE SEGURIDAD", rlutil::WHITE, rlutil::GREEN);}
+    if(modo == 9){msj("ERROR AL CREAR COPIA DE SEGURIDAD", rlutil::WHITE, rlutil::RED);}
+    if(modo == 10){msj("SE RESTAURO CON ÉXITO LA COPIA DE SEGURIDAD", rlutil::WHITE, rlutil::GREEN);}
+    if(modo == 11){msj("ERROR AL RESTAURAR COPIA DE SEGURIDAD", rlutil::WHITE, rlutil::RED);}
+    if(modo == 12){msj("PIN DE SEGURIDAD INCORRECTO", rlutil::WHITE, rlutil::RED);}
 }
 
 void cMenu(){

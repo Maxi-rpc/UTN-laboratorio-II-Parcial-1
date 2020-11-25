@@ -313,7 +313,7 @@
 
 1605903633 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\strusuario.h
 
-1606317797 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.h
+1606318639 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.h
 	"fecha.h"
 	"usuario.h"
 
@@ -321,7 +321,7 @@
 
 1605883970 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\ej1.h
 
-1606318180 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
+1606318638 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
 	<iostream>
 	<string.h>
 	<iomanip>
@@ -374,13 +374,14 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1606245718 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+1606319670 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
 	"rlutil.h"
 	"menu.h"
 	"usuario.h"
+	"entrenamiento.h"
 
 1605903633 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\carteles.h
 
@@ -390,7 +391,7 @@
 	"rlutil.h"
 	"carteles.h"
 
-1606318180 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
+1606319726 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -404,7 +405,7 @@
 
 1606317016 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.h
 
-1606317016 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
+1606319248 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
 	<iostream>
 	<windows.h>
 	<iomanip>
@@ -420,10 +421,10 @@
 
 1606245572 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\fecha.h
 
-1606317797 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\usuario.h
+1606318639 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\usuario.h
 	"fecha.h"
 
-1606318180 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\usuario.cpp
+1606318638 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\usuario.cpp
 	<iostream>
 	<string.h>
 	<iomanip>

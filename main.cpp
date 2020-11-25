@@ -15,6 +15,7 @@ int main()
         initUI();
         menuPrincipal();
     } else { // INGRESAR DESARROLLO DE FUNCIONES PARA PRUEBAS
+        cout << "ESTAS EN MODO DEV PARA PRUEBAS" << endl;
 
     }
 

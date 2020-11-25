@@ -273,10 +273,28 @@ void listarTodoLosEntrenamientos(){
 
 // SUB MENU CONFIGURACION
 void realizarCopSeguridad(){
+    int exito = 0, numR = rand(), conf=0;
     cTitulo("REALIZAR COPIA DE SEGURIDAD");
+    cout << "INGRESE EL SIGUIENTE PIN " << numR << endl;
+    cin >> conf;
+    if(conf == numR){
+        exito += copiaSeguridadUsuario();
+        exito += copiaSeguridadEnt();
+        if(exito == 2){cMsj(8);}
+        else{cMsj(9);}
+    }else{cMsj(12);}
 }
 
 void recupCopSeguridad(){
+    int exito = 0, numR = rand(), conf=0;
     cTitulo("RESTAURAR COPIA DE SEGURIDAD");
+    cout << "INGRESE EL SIGUIENTE PIN " << numR << endl;
+    cin >> conf;
+    if(conf == numR){
+        exito += recCopiaSeguridadUsuario();
+        exito += recCopiaSeguridadEnt();
+        if(exito == 2){cMsj(10);}
+        else{cMsj(11);}
+    }else{cMsj(12);}
 }
 
