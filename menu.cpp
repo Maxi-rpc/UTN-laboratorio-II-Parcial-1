@@ -217,7 +217,23 @@ void listarEntrenamientoPorID(){
 }
 
 void listarEntrenamientoPorIDUsuario(){
-
+    int id, pos, existe;
+    int cant = cantidadEntren();
+    cTitulo("LISTAR ENTRENAMIENTO POR ID USUARIO");
+    cout << "INGRESAR ID: ";
+    cin >> id;
+    existe = buscarUsuario(id);
+    if(existe >= 0){
+        for(int i=0; i<cant; i++){
+            Entrenamiento reg = leerEntren(i);
+            if(id == reg.idUsuario){
+                mostrarEnt(reg);
+                cout << endl;
+                cLinea();
+            }
+        }
+        cMsj(6);
+    }else{cMsj(4);}
 }
 
 void listarTodoLosEntrenamientos(){
