@@ -26,7 +26,7 @@ Usuario cargarUsuario(){
     cout << "PERFIL DE ACTIVIDAD: ";
     cin >> user.perfilActividad;
     cout << "APTO MEDICO 1 / 0 : ";
-    cin >> user.aptoMedico;
+    user.aptoMedico = validarAptoMedico();
     user.estado = true;
 
     return user;

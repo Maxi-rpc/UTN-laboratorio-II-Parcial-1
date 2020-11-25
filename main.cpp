@@ -20,11 +20,9 @@ int main()
     } else { // INGRESAR DESARROLLO DE FUNCIONES PARA PRUEBAS
         initUI();
         cTitulo("ESTAS EN MODO DEV PARA PRUEBAS");
-        bool test;
-        test = validarAptoMedico();
-        if(test == true){cout<<"VERDADERO";}
-        else{cout<<"FALSO";}
-
+        char test;
+        test = validarPerfilActividad();
+        cout << test;
     }
 
 

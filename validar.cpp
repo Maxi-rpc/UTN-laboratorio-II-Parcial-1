@@ -91,6 +91,22 @@ float validarNumReal(){
     return altura;
 }
 
+char validarPerfilActividad(){
+    char perfil;
+    while(!(cin >> perfil) || perfil !="A" || perfil !="B" || perfil !="C"){
+        if(cin.fail()){
+            cout << "INGRESAR UNA LETRA (A B C)" << endl;
+        }
+        else{
+            cout << "INGRESAR NÚMERO UNO O CERO" << endl;
+        }
+        cin.clear();
+        cin.ignore(123, '\n');
+        cout << "> ";
+    }
+    return perfil;
+}
+
 bool validarAptoMedico(){
     bool apto;
     int resp;
