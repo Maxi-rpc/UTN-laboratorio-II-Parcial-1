@@ -175,10 +175,10 @@ Usuario elimUsuario(int pos){
     return user;
 }
 
-bool copiaSeguridad(){
+bool copiaSeguridadUsuario(){
     Usuario user;
     FILE *f = fopen("datos/usuario.dat", "rb");
-    FILE *backup = fopen("datos/usuarioBK.dat", "wb"); //Seteo a 0 el archivo de bk
+    FILE *backup = fopen("datos/usuario.bkp", "wb"); //Seteo a 0 el archivo de bk
     fclose(backup);
     if(f == NULL){
         cout << "No se puede leer usuario.dat .";
@@ -186,9 +186,9 @@ bool copiaSeguridad(){
         return false;
     }
     while(fread(&user, sizeof(Usuario), 1, f)){
-        FILE *bk = fopen("datos/usuarioBK.dat", "ab");
+        FILE *bk = fopen("datos/usuario.bkp", "ab");
         if(bk == NULL){
-            cout << "No se puede guardar en usuario.BK.";
+            cout << "No se puede guardar en usuario.bkp.";
             system("pause");
             return false;
         }

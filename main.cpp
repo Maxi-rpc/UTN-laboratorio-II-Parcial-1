@@ -6,6 +6,7 @@ using namespace std;
 #include "menu.h"
 /// ELIMINAR ESTOS INCLUDES
 #include "usuario.h"
+#include "entrenamiento.h"
 
 int main()
 {
@@ -14,7 +15,8 @@ int main()
         initUI();
         menuPrincipal();
     } else { // INGRESAR DESARROLLO DE FUNCIONES PARA PRUEBAS
-        copiaSeguridad();
+        copiaSeguridadUsuario();
+        copiaSeguridadEnt();
     }
 
 

@@ -273,10 +273,10 @@ void listarTodoLosEntrenamientos(){
 
 // SUB MENU CONFIGURACION
 void realizarCopSeguridad(){
-
+    cTitulo("REALIZAR COPIA DE SEGURIDAD");
 }
 
 void recupCopSeguridad(){
-
+    cTitulo("RESTAURAR COPIA DE SEGURIDAD");
 }
 

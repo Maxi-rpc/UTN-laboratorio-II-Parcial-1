@@ -143,3 +143,27 @@ bool guardarModificacionEnt(Entrenamiento reg, int pos){
     fclose(f);
     return guardo;
 }
+
+bool copiaSeguridadEnt(){
+    Entrenamiento reg;
+    FILE *f = fopen("datos/entrenamiento.dat", "rb");
+    FILE *backup = fopen("datos/entrenamiento.bkp", "wb"); //Seteo a 0 el archivo de bk
+    fclose(backup);
+    if(f == NULL){
+        cout << "No se puede leer entrenamiento.dat .";
+        system("pause");
+        return false;
+    }
+    while(fread(&reg, sizeof(Entrenamiento), 1, f)){
+        FILE *bk = fopen("datos/entrenamiento.bkp", "ab");
+        if(bk == NULL){
+            cout << "No se puede guardar en entrenamiento.bkp.";
+            system("pause");
+            return false;
+        }
+        fwrite(&reg, sizeof(Entrenamiento), 1, bk);
+        fclose(bk);
+    }
+    fclose(f);
+    return true;
+}
