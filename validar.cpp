@@ -14,7 +14,7 @@ int validarIDUsuario(){
             cout << "INGRESAR SOLO NUMEROS" << endl;
         }
         if(id<0){
-            cout << "INGRESAR NUMERO POSITIVO" << endl;
+            cout << "INGRESAR NÚMERO POSITIVO" << endl;
         }
         if(buscarUsuario(id)>0){
             cout << "ID YA EXISTE" << endl;
@@ -82,7 +82,7 @@ float validarNumReal(){
             cout << "INGRESAR SOLO NUMEROS" << endl;
         }
         if(altura<0){
-            cout << "INGRESAR NUMERO POSITIVO" << endl;
+            cout << "INGRESAR NÚMERO POSITIVO" << endl;
         }
         cin.clear();
         cin.ignore(123, '\n');
@@ -91,3 +91,21 @@ float validarNumReal(){
     return altura;
 }
 
+bool validarAptoMedico(){
+    bool apto;
+    int resp;
+    while(!(cin >> resp) || resp > 1 || resp < 0){
+        if(cin.fail()){
+            cout << "INGRESAR NÚMERO UNO O CERO" << endl;
+        }
+        if(resp<0 || resp>1){
+            cout << "INGRESAR NÚMERO UNO O CERO" << endl;
+        }
+        cin.clear();
+        cin.ignore(123, '\n');
+        cout << "> ";
+    }
+    if(resp == 0){apto = false;}
+    if(resp == 1){apto = true;}
+    return apto;
+}

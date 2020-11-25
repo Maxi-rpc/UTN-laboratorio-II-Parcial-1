@@ -20,9 +20,11 @@ int main()
     } else { // INGRESAR DESARROLLO DE FUNCIONES PARA PRUEBAS
         initUI();
         cTitulo("ESTAS EN MODO DEV PARA PRUEBAS");
-        float altura;
-        altura = validarNumReal();
-        cout << altura;
+        bool test;
+        test = validarAptoMedico();
+        if(test == true){cout<<"VERDADERO";}
+        else{cout<<"FALSO";}
+
     }
 
 
