@@ -6,6 +6,7 @@
 using namespace std;
 #include "usuario.h"
 #include "cartel.h"
+#include "validar.h"
 
 Usuario cargarUsuario(){
     Usuario user;
