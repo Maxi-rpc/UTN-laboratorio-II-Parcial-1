@@ -204,7 +204,16 @@ void modificarEntrenamiento(){
 }
 
 void listarEntrenamientoPorID(){
-
+    int id, pos;
+    cTitulo("LISTAR ENTRENAMIENTO POR ID");
+    cout << "INGRESAR ID: ";
+    cin >> id;
+    pos = buscarEnt(id);
+    if(pos >= 0){
+        Entrenamiento reg = leerEntren(pos);
+        mostrarEnt(reg);
+        cMsj(6);
+    }else {cMsj(4);}
 }
 
 void listarEntrenamientoPorIDUsuario(){

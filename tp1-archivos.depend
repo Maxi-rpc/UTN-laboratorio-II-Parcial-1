@@ -313,7 +313,7 @@
 
 1605903633 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\strusuario.h
 
-1606249295 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.h
+1606250325 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.h
 	"fecha.h"
 	"usuario.h"
 
@@ -321,15 +321,14 @@
 
 1605883970 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\ej1.h
 
-1605903809 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
+1606250325 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
 	<iostream>
-	<windows.h>
-	<ctime>
-	<cstdio>
-	"rlutil.h"
+	<string.h>
+	<iomanip>
 	"ui.h"
+	"rlutil.h"
 	"entrenamiento.h"
-	"strUsuario.h"
+	"cartel.h"
 
 1605903753 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\funciones.cpp
 	<iostream>
@@ -421,7 +420,7 @@
 
 1606245572 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\fecha.h
 
-1606245718 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\usuario.h
+1606250325 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\usuario.h
 	"fecha.h"
 
 1606249295 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\usuario.cpp
