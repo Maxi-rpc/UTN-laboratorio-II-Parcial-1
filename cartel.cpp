@@ -70,3 +70,14 @@ void cMenuEntrenamiento(){
     cout << endl;
     cout << "> ";
 }
+
+void cMenuConfiguracion(){
+    cTitulo("MENÚ CONFIGURACIÓN");
+    cout << "1) REALIZAR COPIA DE SEGURIDAD" << endl;
+    cout << "2) RESTAURAR COPIA DE SEGURIDAD" << endl;
+    cLinea();
+    cout << "0) VOLVER AL MENÚ PRINCIPAL" << endl;
+    cout << endl;
+    cout << "> ";
+}
+

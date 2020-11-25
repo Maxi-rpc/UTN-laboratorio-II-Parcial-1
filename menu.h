@@ -22,5 +22,7 @@ void listarTodoLosEntrenamientos();
 // SUB MENU REPORTE
 
 // SUB MENU CONFIGURACION
+void realizarCopSeguridad();
+void recupCopSeguridad();
 
 #endif // MENU_H_INCLUDED

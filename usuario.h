@@ -22,5 +22,5 @@ int cantidadUsuarios(); // Indica la cantidad total de usuarios registrados
 Usuario modUsuario(int pos); // Modifica un usuario
 bool guardarModificacion(Usuario, int pos); // Guarda las modificaciones en la pos del usuario
 Usuario elimUsuario(int pos); // Elimina un usuario
-
+bool copiaSeguridad(); // crea una copia de usuario.dat
 #endif // USUARIO_H_INCLUDED

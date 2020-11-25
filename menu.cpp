@@ -118,7 +118,30 @@ void menuReporte(){
 }
 
 void menuConfiguracion(){
-
+    bool menu = true;
+    int opc;
+    while(menu){
+        cMenuConfiguracion();
+        while(!(cin >> opc)){
+            cMsj(3);
+            cin.clear();
+            cin.ignore(123, '\n');
+            cMenuConfiguracion();
+        }
+        switch(opc){
+            case 1:
+                realizarCopSeguridad();
+            break;
+            case 2:
+                recupCopSeguridad();
+            break;
+            case 0:
+                menu = false;
+            break;
+            default: cMsj(3);
+            break;
+        }
+    }
 }
 
 // SUB MENU USUARIO
@@ -246,5 +269,14 @@ void listarTodoLosEntrenamientos(){
         cLinea();
     }
     cMsj(6);
+}
+
+// SUB MENU CONFIGURACION
+void realizarCopSeguridad(){
+
+}
+
+void recupCopSeguridad(){
+
 }
 
