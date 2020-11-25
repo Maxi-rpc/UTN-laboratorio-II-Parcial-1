@@ -6,6 +6,7 @@ using namespace std;
 #include "menu.h"
 /// ELIMINAR ESTOS INCLUDES
 #include "cartel.h"
+#include "fecha.h"
 #include "usuario.h"
 #include "entrenamiento.h"
 #include "validar.h"
@@ -19,12 +20,8 @@ int main()
     } else { // INGRESAR DESARROLLO DE FUNCIONES PARA PRUEBAS
         initUI();
         cTitulo("ESTAS EN MODO DEV PARA PRUEBAS");
-        char nombre[20];
-        cin >> nombre;
-        while(nombre[0]=='\0'){
-            cout << "> ";
-            cin >> nombre;
-        }
+        Fecha f;
+        f = cargarFecha();
     }
 
 

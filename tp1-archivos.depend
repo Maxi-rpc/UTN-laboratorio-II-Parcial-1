@@ -374,13 +374,14 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1606327321 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+1606333747 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
 	"rlutil.h"
 	"menu.h"
 	"cartel.h"
+	"fecha.h"
 	"usuario.h"
 	"entrenamiento.h"
 	"validar.h"
@@ -407,7 +408,7 @@
 
 1606323188 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.h
 
-1606327604 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
+1606333693 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
 	<iostream>
 	<windows.h>
 	<iomanip>
@@ -436,7 +437,7 @@
 	"cartel.h"
 	"validar.h"
 
-1606327720 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\validar.cpp
+1606334325 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\validar.cpp
 	<iostream>
 	<string.h>
 	<iomanip>
@@ -445,5 +446,5 @@
 	"cartel.h"
 	"usuario.h"
 
-1606328892 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\validar.h
+1606334325 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\validar.h
 

@@ -2,5 +2,9 @@
 #define VALIDAR_H_INCLUDED
 
 int validarIDUsuario(); // valida id POSITIVO, ENTERO, Y NO REPITE ID
+char validarNombre();
+char validarApellido();
+bool validarFechaExistente(int dia , int mes , int anio);
+int validarFechaFuturaPresentePasada(int dia , int mes , int anio);
 
 #endif // VALIDAR_H_INCLUDED

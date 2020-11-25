@@ -36,6 +36,7 @@ void cMsj(int modo){
     if(modo == 10){msj("SE RESTAURO CON ÉXITO LA COPIA DE SEGURIDAD", rlutil::WHITE, rlutil::GREEN);}
     if(modo == 11){msj("ERROR AL RESTAURAR COPIA DE SEGURIDAD", rlutil::WHITE, rlutil::RED);}
     if(modo == 12){msj("PIN DE SEGURIDAD INCORRECTO", rlutil::WHITE, rlutil::RED);}
+    if(modo == 13){msj("FECHA INCORRECTA", rlutil::WHITE, rlutil::RED);}
 }
 
 void cMenu(){
