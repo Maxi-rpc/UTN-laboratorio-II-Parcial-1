@@ -221,6 +221,14 @@ void listarEntrenamientoPorIDUsuario(){
 }
 
 void listarTodoLosEntrenamientos(){
-
+    int cant = cantidadEntren();
+    cTitulo("LISTAR TODO LOS ENTRENAMIENTOS");
+    for(int i=0; i<cant; i++){
+        Entrenamiento reg = leerEntren(i);
+        mostrarEnt(reg);
+        cout << endl;
+        cLinea();
+    }
+    cMsj(6);
 }
 
