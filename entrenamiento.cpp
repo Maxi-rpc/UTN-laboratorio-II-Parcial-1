@@ -167,3 +167,27 @@ bool copiaSeguridadEnt(){
     fclose(f);
     return true;
 }
+
+bool recCopiaSeguridadEnt(){
+    Entrenamiento reg;
+    FILE *bk = fopen("datos/entrenamiento.bkp", "rb");
+    FILE *orig = fopen("datos/entrenamiento.dat", "wb"); //Seteo a 0 el archivo original
+    fclose(orig);
+    if(bk == NULL){
+        cout << "No se puede leer el entrenamiento.bkp .";
+        system("pause");
+        return false;
+    }
+    while(fread(&reg, sizeof(Entrenamiento), 1, bk)){
+        FILE *f = fopen("datos/entrenamiento.dat", "ab");
+        if(f == NULL){
+            cout << "No se puede guardar en entrenamiento.dat.";
+            system("pause");
+            return false;
+        }
+        fwrite(&reg, sizeof(Entrenamiento), 1, f);
+        fclose(f);
+    }
+    fclose(bk);
+    return true;
+}

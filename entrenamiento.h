@@ -20,4 +20,5 @@ int cantidadEntren(); // Indica la cantidad total de entrenamientos registrados
 Entrenamiento modificarEnt(int pos); // Modifica entrenamiento
 bool guardarModificacionEnt(Entrenamiento, int pos); // Guarda el reg en la pos del entrenamiento
 bool copiaSeguridadEnt(); // crea una copia de entrenamiento.dat
+bool recCopiaSeguridadEnt(); // restaura la copia .bkp a .dat
 #endif // ENTRENAMIENTO_H_INCLUDED

@@ -198,3 +198,27 @@ bool copiaSeguridadUsuario(){
     fclose(f);
     return true;
 }
+
+bool recCopiaSeguridadUsuario(){
+    Usuario user;
+    FILE *bk = fopen("datos/usuario.bkp", "rb");
+    FILE *orig = fopen("datos/usuario.dat", "wb"); //Seteo a 0 el archivo original
+    fclose(orig);
+    if(bk == NULL){
+        cout << "No se puede leer el usuario.bkp .";
+        system("pause");
+        return false;
+    }
+    while(fread(&user, sizeof(Usuario), 1, bk)){
+        FILE *f = fopen("datos/usuario.dat", "ab");
+        if(f == NULL){
+            cout << "No se puede guardar en usuario.dat.";
+            system("pause");
+            return false;
+        }
+        fwrite(&user, sizeof(Usuario), 1, f);
+        fclose(f);
+    }
+    fclose(bk);
+    return true;
+}
