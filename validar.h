@@ -6,5 +6,6 @@ char validarNombre();
 char validarApellido();
 bool validarFechaExistente(int dia , int mes , int anio);
 int validarFechaFuturaPresentePasada(int dia , int mes , int anio);
+float validarNumReal();
 
 #endif // VALIDAR_H_INCLUDED

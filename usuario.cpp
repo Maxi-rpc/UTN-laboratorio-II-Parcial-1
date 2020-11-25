@@ -12,7 +12,7 @@ Usuario cargarUsuario(){
     Usuario user;
     cout << "INGRESAR LOS SIGUIENTES DATOS" << endl;
     cout << "ID: ";
-    cin >> user.id;
+    user.id = validarIDUsuario();
     cout << "NOMBRES: ";
     cin >> user.nombres;
     cout << "APELLIDOS: ";

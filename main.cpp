@@ -20,8 +20,9 @@ int main()
     } else { // INGRESAR DESARROLLO DE FUNCIONES PARA PRUEBAS
         initUI();
         cTitulo("ESTAS EN MODO DEV PARA PRUEBAS");
-        Fecha f;
-        f = cargarFecha();
+        float altura;
+        altura = validarNumReal();
+        cout << altura;
     }
 
 

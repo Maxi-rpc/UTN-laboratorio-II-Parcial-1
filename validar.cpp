@@ -74,3 +74,20 @@ int validarFechaFuturaPresentePasada(int dia , int mes , int anio){
     if(dia<date->tm_mday){return -1;}
     return 0;
 }
+
+float validarNumReal(){
+    float altura;
+    while(!(cin >> altura) || altura < 0){
+        if(cin.fail()){
+            cout << "INGRESAR SOLO NUMEROS" << endl;
+        }
+        if(altura<0){
+            cout << "INGRESAR NUMERO POSITIVO" << endl;
+        }
+        cin.clear();
+        cin.ignore(123, '\n');
+        cout << "> ";
+    }
+    return altura;
+}
+

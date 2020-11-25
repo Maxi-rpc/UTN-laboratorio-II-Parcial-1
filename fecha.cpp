@@ -19,7 +19,7 @@ Fecha cargarFecha(){
         existe = validarFechaExistente(f.dia, f.mes, f.anio);
         fut = validarFechaFuturaPresentePasada(f.dia, f.mes, f.anio);
         if(existe==false || fut == 1){
-            cout << "FECHA INCORRECTA, VOLVER A INGRESAR" << endl;
+            cout << "*FECHA INCORRECTA, VOLVER A INGRESAR" << endl;
         }
     }
     return f;
