@@ -11,3 +11,15 @@ char validarPerfilActividad(); //
 bool validarAptoMedico(); // Valida true o false mediante un numero
 
 #endif // VALIDAR_H_INCLUDED
+/*
+int buscarNombre(char *nombreB){
+	int pos=0;
+	Usuario u;
+	while(u.leerDisco(pos)==1){
+		if(strcmp(nombreB,u.getNombre())==0 && u.getEstado()==1){
+            return pos;
+		}
+		pos++;
+    }
+	return -1;
+}*/

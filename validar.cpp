@@ -90,10 +90,11 @@ float validarNumReal(){
     }
     return altura;
 }
-
+/*
 char validarPerfilActividad(){
     char perfil;
-    while(!(cin >> perfil) || perfil !="A" || perfil !="B" || perfil !="C"){
+    strcmp(perfil,"A") == 0 || strcmp(perfil,"B") == 0
+    while(){
         if(cin.fail()){
             cout << "INGRESAR UNA LETRA (A B C)" << endl;
         }
@@ -106,7 +107,7 @@ char validarPerfilActividad(){
     }
     return perfil;
 }
-
+*/
 bool validarAptoMedico(){
     bool apto;
     int resp;
