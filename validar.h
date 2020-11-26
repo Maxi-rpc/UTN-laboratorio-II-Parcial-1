@@ -10,5 +10,6 @@ float validarNumReal(); // Valida numero real
 char validarPerfilActividad(); // Valida que ingrese la letra A,B o C, mayuscula o minuscula
 bool validarAptoMedico(); // Valida true o false mediante un numero
 /// VALIDAR ENTRENAMIENTO
+int validarEntID(); // valida que sea un numero unico autonumerico
 
 #endif // VALIDAR_H_INCLUDED

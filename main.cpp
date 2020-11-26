@@ -21,7 +21,7 @@ int main()
         initUI();
         cTitulo("ESTAS EN MODO DEV PARA PRUEBAS");
         int test;
-        test = validarPerfilActividad();
+        test = validarEntID();
         cout << test;
     }
 

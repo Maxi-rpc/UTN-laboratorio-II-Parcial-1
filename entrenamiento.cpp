@@ -6,10 +6,11 @@
 using namespace std;
 #include "entrenamiento.h"
 #include "cartel.h"
+#include "validar.h"
 
 Entrenamiento cargarEntrenamiento(){
     Entrenamiento reg;
-    reg.id = cantidadEntren()+1;
+    reg.id = validarEntID();
     cout << "ID: " << reg.id << endl;
     cout << "INGRESAR LOS SIGUIENTES DATOS" << endl;
     cout << "ID USUARIO: ";

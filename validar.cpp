@@ -6,6 +6,7 @@
 using namespace std;
 #include "cartel.h"
 #include "usuario.h"
+#include "entrenamiento.h"
 
 /// VALIDAR USUARIO
 int validarIDUsuario(){
@@ -128,3 +129,10 @@ bool validarAptoMedico(){
 }
 
 /// VALIDAR ENTRENAMIENTO
+int validarEntID(){
+    int id = cantidadEntren()+1;
+    return id;
+}
+
+
+
