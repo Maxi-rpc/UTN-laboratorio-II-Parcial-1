@@ -14,7 +14,7 @@ Entrenamiento cargarEntrenamiento(){
     cout << "ID: " << reg.id << endl;
     cout << "INGRESAR LOS SIGUIENTES DATOS" << endl;
     cout << "ID USUARIO: ";
-    cin >> reg.idUsuario;
+    reg.idUsuario = validarUsuarioID();
     cout << "FECHA DE ENTRENAMIENTO: ";
     reg.diaEntrenamiento = cargarFecha();
     cout << "ACTIVIDAD: ";
@@ -28,23 +28,13 @@ Entrenamiento cargarEntrenamiento(){
 }
 
 void mostrarEnt(Entrenamiento reg){
+    string actividad[5] = {"CAMINATA","CORRER","BICICLETA","NATACIÓN","PESAS"};
     cout << "ID: " << reg.id << endl;
     cout << "ID USUARIO: " << reg.idUsuario << endl;
     cout << "FECHA DE ENTRENAMIENTO: " << reg.diaEntrenamiento.dia << " / " << reg.diaEntrenamiento.mes << " / " << reg.diaEntrenamiento.anio << endl;
-    switch(reg.actividad){
-        case 1: cout << "Actividad: Caminata" << endl;
-        break;
-        case 2: cout << "Actividad: Correr" << endl;
-        break;
-        case 3: cout << "Actividad: Bicicleta" << endl;
-        break;
-        case 4: cout << "Actividad: Natacion" << endl;
-        break;
-        case 5: cout << "Actividad: Pesas" << endl;
-        break;
-    }
-    cout << "Calorias: " << reg.calorias << endl;
-    cout << "Tiempo: " << reg.tiempo << " Min" << endl;
+    cout << "ACTIVIDAD: " << actividad[reg.actividad-1] << endl;
+    cout << "CALORÍAS: " << reg.calorias << endl;
+    cout << "TIEMPO: " << reg.tiempo << " Min" << endl;
 }
 
 bool guardarEntren(Entrenamiento reg){

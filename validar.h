@@ -12,5 +12,6 @@ bool validarAptoMedico(); // Valida true o false mediante un numero
 /// VALIDAR ENTRENAMIENTO
 int validarEntID(); // valida que sea un numero unico autonumerico
 int validarUsuarioID(); // busca el id de usuario en usuario.dat y lo trae si es correcto
+int validarActividad(); // Valida si es un numero entero entre 1 y 5
 
 #endif // VALIDAR_H_INCLUDED

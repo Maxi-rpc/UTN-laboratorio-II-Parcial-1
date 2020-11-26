@@ -151,6 +151,22 @@ int validarUsuarioID(){
         cout << "> ";
     }
     return id;
-
 }
 
+int validarActividad(){
+    string actividad[5] = {"CAMINATA","CORRER","BICICLETA","NATACIÓN","PESAS"};
+    int act;
+    cout << "1-CAMINATA 2-CORRER 3-BICICLETA 4-NATACIÓN 5-PESAS" << endl;
+    while(!(cin >> act) || act > 5 || act < 1){
+        if(cin.fail()){
+            cout << "INGRESAR NÚMERO ENTERO" << endl;
+        }
+        if(act<1 || act>5){
+            cout << "INGRESAR NÚMERO ENTRE 1 O 5" << endl;
+        }
+        cin.clear();
+        cin.ignore(123, '\n');
+        cout << "> ";
+    }
+    return act;
+}

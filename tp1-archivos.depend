@@ -321,7 +321,7 @@
 
 1605883970 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\ej1.h
 
-1606410139 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
+1606411315 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
 	<iostream>
 	<string.h>
 	<iomanip>
@@ -375,7 +375,7 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1606410457 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+1606411250 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -450,5 +450,5 @@
 	"usuario.h"
 	"entrenamiento.h"
 
-1606410457 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\validar.h
+1606411250 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\validar.h
 
