@@ -134,5 +134,23 @@ int validarEntID(){
     return id;
 }
 
+int validarUsuarioID(){
+    int id;
+    while(!(cin >> id) || id < 0 || buscarUsuario(id) < 0){
+        if(cin.fail()){
+            cout << "INGRESAR SOLO NUMEROS" << endl;
+        }
+        if(id<0){
+            cout << "INGRESAR NÚMERO POSITIVO" << endl;
+        }
+        if(buscarUsuario(id)<0){
+            cout << "ID NO EXISTE, INGRESAR ID VALIDO" << endl;
+        }
+        cin.clear();
+        cin.ignore(123, '\n');
+        cout << "> ";
+    }
+    return id;
 
+}
 

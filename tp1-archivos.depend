@@ -321,7 +321,7 @@
 
 1605883970 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\ej1.h
 
-1606318638 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
+1606410139 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
 	<iostream>
 	<string.h>
 	<iomanip>
@@ -329,6 +329,7 @@
 	"rlutil.h"
 	"entrenamiento.h"
 	"cartel.h"
+	"validar.h"
 
 1605903753 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\funciones.cpp
 	<iostream>
@@ -374,7 +375,7 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1606410115 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+1606410457 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -439,7 +440,7 @@
 	"cartel.h"
 	"validar.h"
 
-1606408929 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\validar.cpp
+1606410457 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\validar.cpp
 	<iostream>
 	<string.h>
 	<iomanip>
@@ -447,6 +448,7 @@
 	"rlutil.h"
 	"cartel.h"
 	"usuario.h"
+	"entrenamiento.h"
 
-1606410115 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\validar.h
+1606410457 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\validar.h
 
