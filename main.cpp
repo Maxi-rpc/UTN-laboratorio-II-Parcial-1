@@ -20,7 +20,7 @@ int main()
     } else { // INGRESAR DESARROLLO DE FUNCIONES PARA PRUEBAS
         initUI();
         cTitulo("ESTAS EN MODO DEV PARA PRUEBAS");
-        char test;
+        int test;
         test = validarPerfilActividad();
         cout << test;
     }

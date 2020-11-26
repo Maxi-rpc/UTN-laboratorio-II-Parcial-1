@@ -7,6 +7,7 @@ using namespace std;
 #include "cartel.h"
 #include "usuario.h"
 
+/// VALIDAR USUARIO
 int validarIDUsuario(){
     int id;
     while(!(cin >> id) || id < 0 || buscarUsuario(id) > 0){
@@ -90,24 +91,23 @@ float validarNumReal(){
     }
     return altura;
 }
-/*
+
 char validarPerfilActividad(){
     char perfil;
-    strcmp(perfil,"A") == 0 || strcmp(perfil,"B") == 0
-    while(){
-        if(cin.fail()){
-            cout << "INGRESAR UNA LETRA (A B C)" << endl;
-        }
-        else{
-            cout << "INGRESAR NÚMERO UNO O CERO" << endl;
-        }
+    bool ok = false;
+    cin >> perfil;
+    while(perfil!='A' && perfil!='a' && perfil!='B' && perfil!='b' && perfil!='C' && perfil!='c'){
+        cout << "INGRESAR UNA LETRA (A B C)" << endl;
         cin.clear();
         cin.ignore(123, '\n');
         cout << "> ";
+        cin >> perfil;
     }
-    return perfil;
+    if(perfil == 'A' || perfil == 'a'){return perfil;}
+    if(perfil == 'B' || perfil == 'b'){return perfil;}
+    if(perfil == 'C' || perfil == 'c'){return perfil;}
 }
-*/
+
 bool validarAptoMedico(){
     bool apto;
     int resp;
@@ -126,3 +126,5 @@ bool validarAptoMedico(){
     if(resp == 1){apto = true;}
     return apto;
 }
+
+/// VALIDAR ENTRENAMIENTO

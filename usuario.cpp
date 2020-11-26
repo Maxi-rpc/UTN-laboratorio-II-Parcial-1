@@ -24,7 +24,7 @@ Usuario cargarUsuario(){
     cout << "PESO: ";
     user.peso = validarNumReal();
     cout << "PERFIL DE ACTIVIDAD: ";
-    cin >> user.perfilActividad;
+    user.perfilActividad = validarPerfilActividad();
     cout << "APTO MEDICO 1 / 0 : ";
     user.aptoMedico = validarAptoMedico();
     user.estado = true;
