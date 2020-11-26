@@ -18,7 +18,7 @@ Usuario cargarUsuario(){
     cout << "APELLIDOS: ";
     cin >> user.apellidos;
     cout << "FECHA DE NACIMIENTO: " << endl;
-    user.nacimiento = cargarFecha();
+    user.nacimiento = cargarFecha(0);
     cout << "ALTURA: ";
     user.altura = validarNumReal();
     cout << "PESO: ";

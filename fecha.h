@@ -7,6 +7,6 @@ struct Fecha{
     int anio;
 };
 
-Fecha cargarFecha();
+Fecha cargarFecha(int modo);
 
 #endif // FECHA_H_INCLUDED

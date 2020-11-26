@@ -16,13 +16,13 @@ Entrenamiento cargarEntrenamiento(){
     cout << "ID USUARIO: ";
     reg.idUsuario = validarUsuarioID();
     cout << "FECHA DE ENTRENAMIENTO: ";
-    reg.diaEntrenamiento = cargarFecha();
+    reg.diaEntrenamiento = cargarFecha(0);
     cout << "ACTIVIDAD: ";
-    cin >> reg.actividad;
+    reg.actividad = validarActividad();
     cout << "CALORÍAS: ";
-    cin >> reg.calorias;
+    reg.calorias = validarNumReal();
     cout << "TIEMPO EN MINUTOS: ";
-    cin >> reg.tiempo;
+    reg.tiempo = validarNumEntero();
 
     return reg;
 }

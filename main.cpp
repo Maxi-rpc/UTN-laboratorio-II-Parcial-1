@@ -20,9 +20,11 @@ int main()
     } else { // INGRESAR DESARROLLO DE FUNCIONES PARA PRUEBAS
         initUI();
         cTitulo("ESTAS EN MODO DEV PARA PRUEBAS");
-        int test;
-        test = validarActividad();
-        cout << test;
+        bool test;
+        int dia=9, mes=11, anio=2007, edad=13;
+        test = validarEdad(dia , mes , anio, edad);
+        if(test){cout << "MAYOR A 13";}
+        else{cout << "MENOR A 13";}
 
     }
 

@@ -76,21 +76,37 @@ int validarFechaFuturaPresentePasada(int dia , int mes , int anio){
     if(dia<date->tm_mday){return -1;}
     return 0;
 }
+bool validarEdad(int dia , int mes , int anio, int edad){
+    bool resp = false;
+    time_t tiempo;
+    struct tm *tmPtr;
+    tiempo=time(NULL);
+    tmPtr=localtime(&tiempo);
+    int diaActual = tmPtr->tm_mday;
+    int mesActual = tmPtr->tm_mon + 1;
+    int anioActual = 1900+tmPtr->tm_year;
+    if(anioActual - edad <= anio && mesActual <= mes){
+        if(diaActual <= dia){resp = true;}
+        else{resp = false;}
+    }
+
+    return resp;
+}
 
 float validarNumReal(){
-    float altura;
-    while(!(cin >> altura) || altura < 0){
+    float num;
+    while(!(cin >> num) || num < 0){
         if(cin.fail()){
             cout << "INGRESAR SOLO NUMEROS" << endl;
         }
-        if(altura<0){
+        if(num<0){
             cout << "INGRESAR NÚMERO POSITIVO" << endl;
         }
         cin.clear();
         cin.ignore(123, '\n');
         cout << "> ";
     }
-    return altura;
+    return num;
 }
 
 char validarPerfilActividad(){
@@ -169,4 +185,20 @@ int validarActividad(){
         cout << "> ";
     }
     return act;
+}
+
+int validarNumEntero(){
+    int num;
+    while(!(cin >> num) || num < 1){
+        if(cin.fail()){
+            cout << "INGRESAR SOLO NUMEROS" << endl;
+        }
+        if(num<1){
+            cout << "INGRESAR NÚMERO POSITIVO" << endl;
+        }
+        cin.clear();
+        cin.ignore(123, '\n');
+        cout << "> ";
+    }
+    return num;
 }
