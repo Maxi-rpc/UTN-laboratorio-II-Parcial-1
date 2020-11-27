@@ -2,8 +2,7 @@
 #define VALIDAR_H_INCLUDED
 /// VALIDAR USUARIO
 int validarIDUsuario(); // Valida id POSITIVO, ENTERO, Y NO REPITE ID
-char validarNombre();
-char validarApellido();
+void validarTextoSinespacios(char *texto); // Valida que el texto ingresado sea sin espacios al principio o vacio
 bool validarFechaExistente(int dia , int mes , int anio); // Devuelve si existe o no
 int validarFechaFuturaPresentePasada(int dia , int mes , int anio); // Devuelve fecha pasada, presente o futuro
 int validarEdad(int dia , int mes , int anio, int edad); // devuelve si es menor o mayor

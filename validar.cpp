@@ -28,12 +28,15 @@ int validarIDUsuario(){
     return id;
 }
 
-char validarNombre(){
+void validarTextoSinespacios(char *texto){
+    long int longitud;
+    longitud = strlen(texto);
 
-}
-
-char validarApellido(){
-
+    while(texto[0] == ' ' || texto[longitud-1] == ' ' || longitud == 0){
+        cout << "NO ESTA PERMITIDO INICIO VACIO" << endl;
+        cin.getline(texto, 50);
+        longitud = strlen(texto);
+    }
 }
 
 bool validarFechaExistente(int dia , int mes , int anio){
@@ -76,6 +79,7 @@ int validarFechaFuturaPresentePasada(int dia , int mes , int anio){
     if(dia<date->tm_mday){return -1;}
     return 0;
 }
+
 bool validarEdad(int dia , int mes , int anio, int edad){
     bool resp = false;
     time_t tiempo;

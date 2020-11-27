@@ -13,10 +13,13 @@ Usuario cargarUsuario(){
     cout << "INGRESAR LOS SIGUIENTES DATOS" << endl;
     cout << "ID: ";
     user.id = validarIDUsuario();
+    cin.ignore();
     cout << "NOMBRES: ";
-    cin >> user.nombres;
+    cin.getline(user.nombres,50);
+    validarTextoSinespacios(user.nombres);
     cout << "APELLIDOS: ";
-    cin >> user.apellidos;
+    cin.getline(user.apellidos,50);
+    validarTextoSinespacios(user.apellidos);
     cout << "FECHA DE NACIMIENTO: " << endl;
     user.nacimiento = cargarFecha(0);
     cout << "ALTURA: ";
@@ -79,7 +82,6 @@ int buscarUsuario(int id){
     Usuario user;
     FILE *f = fopen("datos/usuario.dat", "rb");
     if(f == NULL){
-        cout << "No se puede leer el usuario.dat .";
         return -1;
     }
     while(fread(&user, sizeof(Usuario), 1, f)){
