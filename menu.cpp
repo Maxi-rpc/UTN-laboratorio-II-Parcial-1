@@ -1,5 +1,6 @@
 #include <iostream>
 #include <windows.h> ///Para funciones system
+#include <time.h> /// para la funcion TIME
 #include "ui.h"
 #include "rlutil.h"
 using namespace std;
@@ -174,7 +175,7 @@ void listarUsuarioPorID(){
     if(pos >= 0){
         Usuario user = leerUsuario(pos);
         if(user.estado == true){
-            mostrarUsuario(user,1);
+            mostrarUsuario(user,0);
             cMsj(6);
         }else{cMsj(7);}
     }else {cMsj(4);}
@@ -183,11 +184,11 @@ void listarUsuarioPorID(){
 void listarTodoLosUsuarios(){
     int cant = cantidadUsuarios();
     cTitulo("LISTAR TODO LOS USUARIOS");
+    cListar(1); // MODO 1 USUARIO
     for(int i=0; i<cant; i++){
         Usuario user = leerUsuario(i);
         mostrarUsuario(user,1);
-        cout << endl;
-        cLinea();
+        cLinea(100,1);
     }
     cMsj(6);
 }
@@ -234,7 +235,7 @@ void listarEntrenamientoPorID(){
     pos = buscarEnt(id);
     if(pos >= 0){
         Entrenamiento reg = leerEntren(pos);
-        mostrarEnt(reg);
+        mostrarEnt(reg,0);
         cMsj(6);
     }else {cMsj(4);}
 }
@@ -250,9 +251,8 @@ void listarEntrenamientoPorIDUsuario(){
         for(int i=0; i<cant; i++){
             Entrenamiento reg = leerEntren(i);
             if(id == reg.idUsuario){
-                mostrarEnt(reg);
-                cout << endl;
-                cLinea();
+                mostrarEnt(reg,1);
+                cLinea(100,1);
             }
         }
         cMsj(6);
@@ -262,17 +262,18 @@ void listarEntrenamientoPorIDUsuario(){
 void listarTodoLosEntrenamientos(){
     int cant = cantidadEntren();
     cTitulo("LISTAR TODO LOS ENTRENAMIENTOS");
+    cListar(2); //MODO 2 PARA ENTRENAMIENTO
     for(int i=0; i<cant; i++){
         Entrenamiento reg = leerEntren(i);
-        mostrarEnt(reg);
-        cout << endl;
-        cLinea();
+        mostrarEnt(reg,1);
+        cLinea(100,1);
     }
     cMsj(6);
 }
 
 // SUB MENU CONFIGURACION
 void realizarCopSeguridad(){
+    srand(time(NULL));
     int exito = 0, numR = rand(), conf=0;
     cTitulo("REALIZAR COPIA DE SEGURIDAD");
     cout << "INGRESE EL SIGUIENTE PIN " << numR << endl;
@@ -286,6 +287,7 @@ void realizarCopSeguridad(){
 }
 
 void recupCopSeguridad(){
+    srand(time(NULL));
     int exito = 0, numR = rand(), conf=0;
     cTitulo("RESTAURAR COPIA DE SEGURIDAD");
     cout << "INGRESE EL SIGUIENTE PIN " << numR << endl;

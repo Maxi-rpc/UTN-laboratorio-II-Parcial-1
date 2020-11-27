@@ -90,9 +90,13 @@ bool validarEdad(int dia , int mes , int anio, int edad){
     int mesActual = tmPtr->tm_mon + 1;
     int anioActual = 1900+tmPtr->tm_year;
 
-    if(anioActual - edad > anio){resp = true;}
-    if(anioActual - edad == anio && mesActual < mes){resp = true;}
-    if(anioActual - edad == anio && mesActual < mes){resp = true;}
+    if(anioActual >= edad + anio){
+        if(anioActual == edad + anio && mesActual >= mes && diaActual >= dia){resp = true;}
+        if(anioActual == edad + anio && mesActual > mes){resp = true;}
+        if(anioActual == edad + anio && mesActual < mes){resp = false;}
+        if(anioActual == edad + anio && mesActual <= mes && diaActual < dia){resp = false;}
+        if(anioActual > edad + anio){resp = true;}
+    }else{resp = false;}
 
     return resp;
 }

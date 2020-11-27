@@ -19,16 +19,12 @@ int main()
     if(modoDev == 0){
         initUI();
         menuPrincipal();
-    } else { // INGRESAR DESARROLLO DE FUNCIONES PARA PRUEBAS
+    } else { // INGRESAR DESARROLLO DE FUNCIONES PARA TEST
         initUI();
         cTitulo("ESTAS EN MODO DEV PARA PRUEBAS");
-        bool test;
-        int dia=9, mes=11, anio=2007, edad=13;
-        test = validarEdad(dia , mes , anio, edad);
-        if(test){cout << "MAYOR A 13";}
-        else{cout << "MENOR A 13";}
 
-    }
+
+    } // FINALIZA EL MODO TEST
 
 
     return 0;

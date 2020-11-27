@@ -20,8 +20,8 @@ Usuario cargarUsuario(){
     cout << "APELLIDOS: ";
     cin.getline(user.apellidos,50);
     validarTextoSinespacios(user.apellidos);
-    cout << "FECHA DE NACIMIENTO: " << endl;
-    user.nacimiento = cargarFecha(0);
+    cout << "*FECHA DE NACIMIENTO: " << endl;
+    user.nacimiento = cargarFecha(1);
     cout << "ALTURA: ";
     user.altura = validarNumReal();
     cout << "PESO: ";
@@ -36,11 +36,11 @@ Usuario cargarUsuario(){
 }
 
 void mostrarUsuario(Usuario user, int modo){
-    if(modo == 1){
+    if(modo == 0){
         cout << "ID: " << user.id << endl;
         cout << "NOMBRES: " << user.nombres << endl;
         cout << "APELLIDOS: " << user.apellidos << endl;
-        cout << "FECHA DE NACIMIENTO: " << user.nacimiento.dia << " / " << user.nacimiento.mes << " / " << user.nacimiento.anio << endl;
+        cout << "FECHA DE NACIMIENTO: " << user.nacimiento.dia << "/" << user.nacimiento.mes << "/" << user.nacimiento.anio << endl;
         cout << "ALTURA: " << user.altura << endl;
         cout << "PESO: " << user.peso << endl;
         cout << "PERFIL DE ACTIVIDAD: " << user.perfilActividad << endl;
@@ -49,7 +49,27 @@ void mostrarUsuario(Usuario user, int modo){
         if(user.estado){cout << "ACTIVO";}
         else{cout << "INACTIVO";}
     }
-
+    int col = 2;
+    if(modo == 1){ //MODO 1 PARA USUARIO LISTAR
+        int ancho1 = 13;
+        cout << setw(4) << user.id;
+        cout << setw(col) << " ";
+        cout << setw(ancho1) << user.nombres;
+        cout << setw(col) << " ";
+        cout << setw(ancho1) << user.apellidos;
+        cout << setw(col) << " ";
+        cout << setw(3) << user.nacimiento.dia << setw(1) << "/" << setw(2)<< user.nacimiento.mes << setw(1) << "/" << setw(4) << user.nacimiento.anio;
+        cout << setw(col) << " ";
+        cout << setw(7) << user.altura;
+        cout << setw(col) << " ";
+        cout << setw(5) << user.peso;
+        cout << setw(col) << " ";
+        cout << setw(10) << user.perfilActividad;
+        cout << setw(col) << " ";
+        cout << setw(8) << user.aptoMedico;
+        if(user.estado){cout << setw(9) << "ACTIVO";}
+        else{cout << setw(9) << "INACTIVO";}
+    }
 }
 
 bool guardarUsuario(Usuario user){
@@ -112,7 +132,7 @@ Usuario modUsuario(int pos){
     cout << "USUARIO A MODIFICAR: " << endl;
     cLinea();
     Usuario user = leerUsuario(pos);
-    mostrarUsuario(user,1);
+    mostrarUsuario(user,0);
     cout << endl;
     cLinea();
     cout << "INGRESAR OPCIÓN A MODIFICAR: " << endl;
@@ -124,15 +144,15 @@ Usuario modUsuario(int pos){
     switch(opc){
         case 1:
             cout << "NUEVO PESO: ";
-            cin >> user.peso;
+            user.peso = validarNumReal();
         break;
         case 2:
             cout << "NUEVA ACTIVIDAD: ";
-            cin >> user.perfilActividad;
+            user.perfilActividad = validarPerfilActividad();
         break;
         case 3:
             cout << "NUEVO APTO MÉDICO: ";
-            cin >> user.aptoMedico;
+            user.aptoMedico = validarAptoMedico();
         break;
         default: cMsj(3);
         break;
@@ -157,7 +177,7 @@ Usuario elimUsuario(int pos){
     cout << "USUARIO A ELIMINAR: " << endl;
     cLinea();
     Usuario user = leerUsuario(pos);
-    mostrarUsuario(user,1);
+    mostrarUsuario(user,0);
     cout << endl;
     cLinea();
     cout << "ELIMINAR USUARIO?" << endl;

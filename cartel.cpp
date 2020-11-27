@@ -16,12 +16,17 @@ void gotoXYPred(int x, int y){
     gotoxy(x, y);
 }
 
-void cLinea(int cantidad){ // Determinamos la cantidad de repeticiones
+void cLinea(int cantidad, int modo){ // Determinamos la cantidad de repeticiones
     string linea = "-", lineas; // Determinamos el separador
     for(int i=0; i<cantidad; i++){
         lineas += linea;
     }
-    cout << lineas << endl;
+    if(modo == 0){cout << lineas << endl;}
+    if(modo == 1){
+        cout << endl;
+        cout << lineas << endl;
+    }
+
 }
 
 void cMsj(int modo){
@@ -87,3 +92,41 @@ void cMenuConfiguracion(){
     cout << "> ";
 }
 
+void cListar(int modo){
+    int col = 2;
+    if(modo == 1){ //MODO 1 PARA USUARIO
+        int ancho1 = 13;
+        cout << setw(4) << "ID";
+        cout << setw(col) << " ";
+        cout << setw(ancho1) << "NOMBRES";
+        cout << setw(col) << " ";
+        cout << setw(ancho1) << "APELLIDOS";
+        cout << setw(col) << " ";
+        cout << setw(11) << "FECHA";
+        cout << setw(col) << " ";
+        cout << setw(7) << "ALTURA";
+        cout << setw(col) << " ";
+        cout << setw(5) << "PESO";
+        cout << setw(col) << " ";
+        cout << setw(10) << "PERFIL ACT";
+        cout << setw(col) << " ";
+        cout << setw(8) << "APTO M";
+        cout << setw(col) << " ";
+        cout << setw(7) << "ESTADO";
+    }
+    if(modo == 2){ //MODO 2 PARA ENTRENAMIENTO
+        int ancho2 = 13;
+        cout << setw(4) << "ID";
+        cout << setw(col) << " ";
+        cout << setw(ancho2) << "ID USUARIO";
+        cout << setw(col) << " ";
+        cout << setw(11) << "FECHA";
+        cout << setw(col) << " ";
+        cout << setw(10) << "ACTIVIDAD";
+        cout << setw(col) << " ";
+        cout << setw(9) << "CALORÍAS";
+        cout << setw(col) << " ";
+        cout << setw(7) << "TIEMPO";
+    }
+    cLinea(100,1);
+}

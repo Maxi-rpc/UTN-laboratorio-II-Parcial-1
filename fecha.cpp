@@ -6,8 +6,8 @@ using namespace std;
 #include "validar.h"
 #include "cartel.h"
 Fecha cargarFecha(int modo){
-    bool existe = false, edad;
-    int fut = 1;
+    bool existe = false, mayor;
+    int fut = 1, edad = 13;
     Fecha f;
     while(existe == false || fut == 1){
         cout << "INGRESAR DIA: ";
@@ -18,11 +18,13 @@ Fecha cargarFecha(int modo){
         cin >> f.anio;
         existe = validarFechaExistente(f.dia, f.mes, f.anio);
         fut = validarFechaFuturaPresentePasada(f.dia, f.mes, f.anio);
-        /*if(modo == 1 && fut == -1){
-            edad = validarEdad();
-        }*/
+        if(modo == 1 && fut == -1){
+            mayor  = validarEdad(f.dia , f.mes , f.anio, edad);
+            if(mayor == false){existe=false;}
+        }
         if(existe==false || fut == 1){
-            cout << "*FECHA INCORRECTA, VOLVER A INGRESAR" << endl;
+            if(mayor==false){cout << "DEBE SER MAYOR A "<< edad << " AÑOS DE EDAD"<<endl;}
+            else{cout << "*FECHA INCORRECTA, VOLVER A INGRESAR" << endl;}
         }
     }
     return f;

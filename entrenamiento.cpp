@@ -15,9 +15,9 @@ Entrenamiento cargarEntrenamiento(){
     cout << "INGRESAR LOS SIGUIENTES DATOS" << endl;
     cout << "ID USUARIO: ";
     reg.idUsuario = validarUsuarioID();
-    cout << "FECHA DE ENTRENAMIENTO: ";
+    cout << "*FECHA DE ENTRENAMIENTO: " << endl;
     reg.diaEntrenamiento = cargarFecha(0);
-    cout << "ACTIVIDAD: ";
+    cout << "*ACTIVIDAD: " << endl;
     reg.actividad = validarActividad();
     cout << "CALORÍAS: ";
     reg.calorias = validarNumReal();
@@ -27,14 +27,32 @@ Entrenamiento cargarEntrenamiento(){
     return reg;
 }
 
-void mostrarEnt(Entrenamiento reg){
+void mostrarEnt(Entrenamiento reg, int modo){
     string actividad[5] = {"CAMINATA","CORRER","BICICLETA","NATACIÓN","PESAS"};
-    cout << "ID: " << reg.id << endl;
-    cout << "ID USUARIO: " << reg.idUsuario << endl;
-    cout << "FECHA DE ENTRENAMIENTO: " << reg.diaEntrenamiento.dia << " / " << reg.diaEntrenamiento.mes << " / " << reg.diaEntrenamiento.anio << endl;
-    cout << "ACTIVIDAD: " << actividad[reg.actividad-1] << endl;
-    cout << "CALORÍAS: " << reg.calorias << endl;
-    cout << "TIEMPO: " << reg.tiempo << " Min" << endl;
+    if(modo == 0){
+        cout << "ID: " << reg.id << endl;
+        cout << "ID USUARIO: " << reg.idUsuario << endl;
+        cout << "FECHA DE ENTRENAMIENTO: " << reg.diaEntrenamiento.dia << "/" << reg.diaEntrenamiento.mes << "/" << reg.diaEntrenamiento.anio << endl;
+        cout << "ACTIVIDAD: " << actividad[reg.actividad-1] << endl;
+        cout << "CALORÍAS: " << reg.calorias << endl;
+        cout << "TIEMPO: " << reg.tiempo << " Min" << endl;
+    }
+    int col = 2;
+    if(modo == 1){ //MODO 1 PARA ENTRENAMIENTO LISTAR
+        int ancho1 = 13;
+        cout << setw(4) << reg.id;
+        cout << setw(col) << " ";
+        cout << setw(ancho1) << reg.idUsuario;
+        cout << setw(col) << " ";
+        cout << setw(3) << reg.diaEntrenamiento.dia << setw(1) << "/" << setw(2)<< reg.diaEntrenamiento.mes << setw(1) << "/" << setw(4) << reg.diaEntrenamiento.anio;
+        cout << setw(col) << " ";
+        cout << setw(10) << actividad[reg.actividad-1];
+        cout << setw(col) << " ";
+        cout << setw(9) << reg.calorias;
+        cout << setw(col) << " ";
+        cout << setw(7) << reg.tiempo;
+    }
+
 }
 
 bool guardarEntren(Entrenamiento reg){
@@ -99,7 +117,7 @@ Entrenamiento modificarEnt(int pos){
     cout << "ENTRENAMIENTO A MODIFICAR: " << endl;
     cLinea();
     Entrenamiento reg = leerEntren(pos);
-    mostrarEnt(reg);
+    mostrarEnt(reg,0);
     cout << endl;
     cLinea();
     cout << "INGRESAR OPCIÓN A MODIFICAR: " << endl;
@@ -110,11 +128,11 @@ Entrenamiento modificarEnt(int pos){
     switch(opc){
         case 1:
             cout << "NUEVO TIEMPO: ";
-            cin >> reg.tiempo;
+            reg.tiempo = validarNumEntero();
         break;
         case 2:
             cout << "NUEVA CALORÍAS: ";
-            cin >> reg.calorias;
+            reg.calorias = validarNumReal();
         break;
         default: cMsj(3);
         break;
