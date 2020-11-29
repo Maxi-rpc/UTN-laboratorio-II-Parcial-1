@@ -519,7 +519,7 @@
 	"usuario.h"
 	"entrenamiento.h"
 
-1606693818 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
+1606694024 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
 	<iostream>
 	<windows.h>
 	<time.h>
