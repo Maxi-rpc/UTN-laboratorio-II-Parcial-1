@@ -34,11 +34,10 @@
 		</Compiler>
 		<Unit filename="cartel.cpp" />
 		<Unit filename="cartel.h" />
-<<<<<<< HEAD
+		<Unit filename="entrenamiento.cpp" />
+		<Unit filename="entrenamiento.h" />
 		<Unit filename="fecha.cpp" />
 		<Unit filename="fecha.h" />
-=======
->>>>>>> Max
 		<Unit filename="main.cpp" />
 		<Unit filename="menu.cpp" />
 		<Unit filename="menu.h" />
@@ -47,6 +46,8 @@
 		<Unit filename="ui.h" />
 		<Unit filename="usuario.cpp" />
 		<Unit filename="usuario.h" />
+		<Unit filename="validar.cpp" />
+		<Unit filename="validar.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

@@ -7,7 +7,6 @@ struct Fecha{
     int anio;
 };
 
-Fecha cargarFecha();
-bool validarFechaExistente(int dia , int mes , int anio);
+Fecha cargarFecha(int modo);
 
 #endif // FECHA_H_INCLUDED

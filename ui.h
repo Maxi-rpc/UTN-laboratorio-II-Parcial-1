@@ -1,7 +1,7 @@
 #ifndef UI_H_INCLUDED
 #define UI_H_INCLUDED
 
-#define SCREEN_WIDTH 80
+#define SCREEN_WIDTH 100
 #define SCREEN_HEIGHT 25
 
 #define APP_BACKCOLOR 0 // DEFINE EL COLOR DE FONDO general

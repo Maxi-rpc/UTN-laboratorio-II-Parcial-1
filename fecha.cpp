@@ -3,41 +3,29 @@
 #include "rlutil.h"
 using namespace std;
 #include "fecha.h"
-
-Fecha cargarFecha(){
+#include "validar.h"
+#include "cartel.h"
+Fecha cargarFecha(int modo){
+    bool existe = false, mayor;
+    int fut = 1, edad = 13;
     Fecha f;
-    cout << "INGRESAR DIA: ";
-    cin >> f.dia;
-    cout << "INGRESAR MES: ";
-    cin >> f.mes;
-    cout << "INGRESAR AÑO: ";
-    cin >> f.anio;
-
-    return f;
-}
-
-bool validarFechaExistente(int dia , int mes , int anio){
-    bool bisiesto=false;
-    int cantidadDias;
-    //Año bisiesto
-    if(anio%4==0){
-        if(anio%100==0){
-            if(anio%400==0){bisiesto=true;}
+    while(existe == false || fut == 1){
+        cout << "INGRESAR DIA: ";
+        cin >> f.dia;
+        cout << "INGRESAR MES: ";
+        cin >> f.mes;
+        cout << "INGRESAR AÑO: ";
+        cin >> f.anio;
+        existe = validarFechaExistente(f.dia, f.mes, f.anio);
+        fut = validarFechaFuturaPresentePasada(f.dia, f.mes, f.anio);
+        if(modo == 1 && fut == -1){
+            mayor  = validarEdad(f.dia , f.mes , f.anio, edad);
+            if(mayor == false){existe=false;}
         }
-        else{bisiesto=true;}
+        if(existe==false || fut == 1){
+            if(mayor==false){cout << "DEBE SER MAYOR A "<< edad << " AÑOS DE EDAD"<<endl;}
+            else{cout << "*FECHA INCORRECTA, VOLVER A INGRESAR" << endl;}
+        }
     }
-    //Cantidad de días
-    if(mes==2){
-        if(bisiesto){cantidadDias=29;}
-        else{cantidadDias=28;}
-    }
-    else{
-        if(mes==4||mes==6||mes==9||mes==11){cantidadDias=30;}
-        else{cantidadDias=31;}
-    }
-    //Validación
-    if(anio<0){return false;}
-    if(mes<1||mes>12){return false;}
-    if(dia<1||dia>cantidadDias){return false;}
-    return true;
+    return f;
 }
