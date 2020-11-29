@@ -6,6 +6,7 @@
 using namespace std;
 #include "menu.h"
 #include "cartel.h"
+#include "validar.h"
 // STRUCT
 #include "usuario.h"
 #include "entrenamiento.h"
