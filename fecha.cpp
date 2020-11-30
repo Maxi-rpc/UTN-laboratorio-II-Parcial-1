@@ -5,6 +5,7 @@ using namespace std;
 #include "fecha.h"
 #include "validar.h"
 #include "cartel.h"
+
 Fecha cargarFecha(int modo){
     bool existe = false, mayor;
     int fut = 1, edad = 13;

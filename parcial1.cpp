@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 using namespace std;
+#include <iomanip>
 #include "menu.h"
 /// ELIMINAR ESTOS INCLUDES
 #include "cartel.h"
@@ -31,6 +32,7 @@ void puntoUno(){
     int id, pos, cant = cantidadUsuarios();
     cTitulo("PUNTO UNO");
     cout << "A partir de un IDUsuario que se ingresa por teclado, listar todos los códigos de actividades que no haya realizado nunca."<<endl;
+    cout << "> ";
     cin >> id;
     cLinea();
     pos = buscarUsuario(id);
@@ -61,4 +63,45 @@ void listarActividadNo(int idUsuario){
     }
 }
 
+void puntoDos(){
+    int cant = cantidadUsuarios(), col=2;
+    float calorias=0;
+    cTitulo("PUNTO DOS");
+    cout << "Por cada usuario, listar los Apellidos y nombres y la cantidad total de calorías quemadas." << endl;
+    cout << endl;
+    listarPunto2();
+    for(int i=0; i<cant; i++){
+        Usuario user = leerUsuario(i);
+        calorias = contarCalorias(user.id);
+        cout << setw(15) << user.nombres;
+        cout << setw(col) << " ";
+        cout << setw(15) << user.apellidos;
+        cout << setw(col) << " ";
+        cout << setw(9) << calorias;
+        //cout << user.nombres << "," << user.apellidos << "," << calorias << endl;
+        cLinea(100,1);
+    }
+    cMsj(6);
+}
 
+float contarCalorias(int idUsuario){
+    float calorias=0;
+    int cant = cantidadEntren();
+    for(int i=0; i<cant; i++){
+        Entrenamiento reg = leerEntren(i);
+        if(idUsuario == reg.idUsuario){
+            calorias += reg.calorias;
+        }
+    }
+    return calorias;
+}
+
+void listarPunto2(){
+    int col = 2;
+    cout << setw(15) << "NOMBRES";
+    cout << setw(col) << " ";
+    cout << setw(15) << "APELLIDOS";
+    cout << setw(col) << " ";
+    cout << setw(9) << "CALORÍAS";
+    cLinea(100,1);
+}

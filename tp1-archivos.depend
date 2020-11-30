@@ -231,7 +231,7 @@
 	"entrenamiento.h"
 	"ui.h"
 
-1606693818 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
+1606703096 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
 	<iostream>
 	<string.h>
 	<iomanip>
@@ -272,7 +272,7 @@
 	"strUsuario.h"
 	"entrenamiento.h"
 
-1606698330 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+1606703460 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -482,9 +482,9 @@
 1606694117 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\usuario.h
 	"fecha.h"
 
-1606693818 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\validar.h
+1606703246 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\validar.h
 
-1606693818 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\fecha.cpp
+1606703308 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\fecha.cpp
 	<iostream>
 	"ui.h"
 	"rlutil.h"
@@ -504,7 +504,7 @@
 	"cartel.h"
 	"validar.h"
 
-1606694280 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\validar.cpp
+1606703424 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\validar.cpp
 	<iostream>
 	<string.h>
 	<iomanip>
@@ -513,8 +513,9 @@
 	"cartel.h"
 	"usuario.h"
 	"entrenamiento.h"
+	"validar.h"
 
-1606698445 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
+1606701580 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
 	<iostream>
 	<windows.h>
 	<time.h>
@@ -527,13 +528,14 @@
 	"entrenamiento.h"
 	"parcial1.h"
 
-1606700488 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.cpp
+1606703547 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
 	"rlutil.h"
 	<stdio.h>
 	<string.h>
+	<iomanip>
 	"menu.h"
 	"cartel.h"
 	"fecha.h"
@@ -542,5 +544,5 @@
 	"validar.h"
 	"parcial1.h"
 
-1606699794 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.h
+1606701806 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.h
 

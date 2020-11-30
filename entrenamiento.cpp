@@ -18,7 +18,7 @@ Entrenamiento cargarEntrenamiento(){
     cout << "*FECHA DE ENTRENAMIENTO: " << endl;
     reg.diaEntrenamiento = cargarFecha(0);
     cout << "*ACTIVIDAD: " << endl;
-    reg.actividad = validarActividad();
+    reg.actividad = validarActividad(reg.idUsuario);
     cout << "CALORÍAS: ";
     reg.calorias = validarNumReal();
     cout << "TIEMPO EN MINUTOS: ";

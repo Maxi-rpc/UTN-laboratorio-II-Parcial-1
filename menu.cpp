@@ -134,7 +134,7 @@ void menuReporte(){
                 puntoUno();
             break;
             case 2:
-                modificarEntrenamiento();
+                puntoDos();
             break;
             case 0:
                 menu = false;

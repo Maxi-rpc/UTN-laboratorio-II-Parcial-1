@@ -23,7 +23,7 @@ int main()
         initUI();
         cTitulo("ESTAS EN MODO DEV PARA PRUEBAS");
 
-        puntoUno();
+
 
     } // FINALIZA EL MODO TEST
 
