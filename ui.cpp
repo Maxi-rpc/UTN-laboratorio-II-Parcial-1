@@ -8,7 +8,7 @@ using namespace rlutil;
 
 void initUI() {
 
-    system("mode con: cols=100 lines=25");
+    system("mode con: cols=100 lines=35");
     SetConsoleOutputCP(1252);
     SetConsoleCP(1252);
     setlocale(LC_ALL, "spanish");

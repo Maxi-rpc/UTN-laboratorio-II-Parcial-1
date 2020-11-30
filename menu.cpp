@@ -10,6 +10,9 @@ using namespace std;
 // STRUCT
 #include "usuario.h"
 #include "entrenamiento.h"
+// PARCIAL LAB 24/9/2020
+#include "parcial1.h"
+
 void menuPrincipal(){
     bool menu = true;
     int opc;
@@ -116,7 +119,30 @@ void menuEntrenamiento(){
 }
 
 void menuReporte(){
-
+    bool menu = true;
+    int opc;
+    while(menu){
+        cMenuReporte();
+        while(!(cin >> opc)){
+            cMsj(3);
+            cin.clear();
+            cin.ignore(123, '\n');
+            cMenuReporte();
+        }
+        switch(opc){
+            case 1:
+                puntoUno();
+            break;
+            case 2:
+                puntoDos();
+            break;
+            case 0:
+                menu = false;
+            break;
+            default: cMsj(3);
+            break;
+        }
+    }
 }
 
 void menuConfiguracion(){

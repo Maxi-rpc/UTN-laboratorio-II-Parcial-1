@@ -4,7 +4,7 @@
 // PREDETERMINADOS
 void cTitulo(char *titulo); // Titulo dinamico
 void gotoXYPred(int x=1, int y=3); // Predeterminar x e y
-void cLinea(int cantidad=10, int modo=0); // Cartel DIBUJA UNA LINEA DETERMINADA
+void cLinea(int cantidad=20, int modo=0); // Cartel DIBUJA UNA LINEA DETERMINADA
 void cMsj(int modo); // MSJ DINAMICO
 // MENU
 void cMenu();

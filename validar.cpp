@@ -7,6 +7,7 @@ using namespace std;
 #include "cartel.h"
 #include "usuario.h"
 #include "entrenamiento.h"
+#include "validar.h"
 
 /// VALIDAR USUARIO
 int validarIDUsuario(){
@@ -119,7 +120,6 @@ float validarNumReal(){
 
 char validarPerfilActividad(){
     char perfil;
-    bool ok = false;
     cin >> perfil;
     while(perfil!='A' && perfil!='a' && perfil!='B' && perfil!='b' && perfil!='C' && perfil!='c'){
         cout << "INGRESAR UNA LETRA (A B C)" << endl;
@@ -177,21 +177,34 @@ int validarUsuarioID(){
     return id;
 }
 
-int validarActividad(){
+int validarActividad(int id){
     string actividad[5] = {"CAMINATA","CORRER","BICICLETA","NATACIÓN","PESAS"};
     int act;
-    cout << "1-CAMINATA 2-CORRER 3-BICICLETA 4-NATACIÓN 5-PESAS" << endl;
-    while(!(cin >> act) || act > 5 || act < 1){
-        if(cin.fail()){
-            cout << "INGRESAR NÚMERO ENTERO" << endl;
+    bool apto = buscarApto(id);
+
+    if(apto){
+        cout << "1-CAMINATA 2-CORRER 3-BICICLETA 4-NATACIÓN 5-PESAS" << endl;
+        while(!(cin >> act) || act > 5 || act < 1){
+            if(act<1 || act>5){
+                cout << "INGRESAR NÚMERO ENTRE 1 O 5" << endl;
+            }
+            cin.clear();
+            cin.ignore(123, '\n');
+            cout << "> ";
         }
-        if(act<1 || act>5){
-            cout << "INGRESAR NÚMERO ENTRE 1 O 5" << endl;
+    }else{
+        cout << "1-CAMINATA 2-CORRER 3-BICICLETA" << endl;
+        while(!(cin >> act) || act > 3 || act < 1){
+            if(act<1 || act>3){
+                cout << "INGRESAR NÚMERO ENTRE 1 O 3" << endl;
+            }
+            cin.clear();
+            cin.ignore(123, '\n');
+            cout << "> ";
         }
-        cin.clear();
-        cin.ignore(123, '\n');
-        cout << "> ";
     }
+
+
     return act;
 }
 
@@ -209,4 +222,12 @@ int validarNumEntero(){
         cout << "> ";
     }
     return num;
+}
+
+bool buscarApto(int id){
+    bool apto;
+    int pos = buscarUsuario(id);
+    Usuario user = leerUsuario(pos);
+    apto = user.aptoMedico;
+    return apto;
 }
