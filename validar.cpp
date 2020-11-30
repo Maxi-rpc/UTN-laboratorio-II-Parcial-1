@@ -119,7 +119,6 @@ float validarNumReal(){
 
 char validarPerfilActividad(){
     char perfil;
-    bool ok = false;
     cin >> perfil;
     while(perfil!='A' && perfil!='a' && perfil!='B' && perfil!='b' && perfil!='C' && perfil!='c'){
         cout << "INGRESAR UNA LETRA (A B C)" << endl;
