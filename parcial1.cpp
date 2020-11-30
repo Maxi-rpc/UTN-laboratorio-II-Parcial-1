@@ -78,7 +78,6 @@ void puntoDos(){
         cout << setw(15) << user.apellidos;
         cout << setw(col) << " ";
         cout << setw(9) << calorias;
-        //cout << user.nombres << "," << user.apellidos << "," << calorias << endl;
         cLinea(100,1);
     }
     cMsj(6);

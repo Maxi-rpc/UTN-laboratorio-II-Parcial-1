@@ -286,7 +286,7 @@
 	"entrenamiento.h"
 	"validar.h"
 
-1606693818 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\ui.cpp
+1606703780 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\ui.cpp
 	<iostream>
 	<iomanip>
 	<cstring>
@@ -475,7 +475,7 @@
 	"rlutil.h"
 	"cartel.h"
 
-1606694117 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\cartel.h
+1606704080 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\cartel.h
 
 1606693818 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\fecha.h
 
@@ -528,7 +528,7 @@
 	"entrenamiento.h"
 	"parcial1.h"
 
-1606703590 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.cpp
+1606703957 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
