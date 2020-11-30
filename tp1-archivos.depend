@@ -261,7 +261,7 @@
 
 1600986902 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\funciones.h
 
-1606693818 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\ui.h
+1606703780 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\ui.h
 
 1600988885 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\funcusuarios.cpp
 	<iostream>
@@ -528,7 +528,7 @@
 	"entrenamiento.h"
 	"parcial1.h"
 
-1606703547 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.cpp
+1606703590 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
