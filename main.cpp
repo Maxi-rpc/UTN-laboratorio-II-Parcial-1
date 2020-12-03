@@ -20,8 +20,7 @@ int main()
         initUI();
         cTitulo("ESTAS EN MODO DEV PARA PRUEBAS");
         // INGRESAR DESARROLLO DE FUNCIONES PARA TEST
-        int prom = promedioTiempo(1000);
-        cout << prom;
+        punto2B();
 
     } // FINALIZA EL MODO TEST
 

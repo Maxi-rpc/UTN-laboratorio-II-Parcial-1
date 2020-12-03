@@ -231,15 +231,21 @@ void punto2B(){
 }
 
 void promMayorTiempo(){
-    int cantUser = cantidadUsuarios(), mayor=0, prom=0;
+    int cantUser= cantidadUsuarios(), mayor=0, prom=0, i=0;
     Usuario aux;
-    for(int i=0; i<cantUser; i++){
+    for(i; i<3; i++){
         Usuario user = leerUsuario(i);
         prom = promedioTiempo(user.id);
-        if(prom > mayor){
+        if(i==0){
             mayor = prom;
             strcpy(aux.nombres,user.nombres);
             strcpy(aux.apellidos,user.apellidos);
+        }else{
+            if(prom > mayor){
+                mayor = prom;
+                strcpy(aux.nombres,user.nombres);
+                strcpy(aux.apellidos,user.apellidos);
+            }
         }
     }
     cout << "NOMBRES: " << aux.nombres << endl;
@@ -256,6 +262,6 @@ int promedioTiempo(int id){
             prom += reg.tiempo;
         }
     }
-    prom = prom / total;
+    prom /= total;
     return prom;
 }

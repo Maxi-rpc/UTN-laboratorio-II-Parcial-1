@@ -386,7 +386,7 @@
 	"strUsuario.h"
 	"entrenamiento.h"
 
-1606967571 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+1607034513 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -395,10 +395,7 @@
 	<string.h>
 	"menu.h"
 	"cartel.h"
-	"fecha.h"
-	"usuario.h"
-	"entrenamiento.h"
-	"validar.h"
+	"parcial1.h"
 
 1606704287 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\ui.cpp
 	<iostream>
@@ -574,7 +571,7 @@
 
 1606745037 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\validar.h
 
-1606967577 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
+1607031584 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
 	<iostream>
 	<windows.h>
 	<iomanip>
@@ -582,7 +579,7 @@
 	"rlutil.h"
 	"cartel.h"
 
-1606967571 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\cartel.h
+1607030786 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\cartel.h
 
 1606693818 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\fecha.h
 
@@ -622,7 +619,7 @@
 	"entrenamiento.h"
 	"validar.h"
 
-1606704287 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
+1607031584 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
 	<iostream>
 	<windows.h>
 	<time.h>
@@ -634,8 +631,9 @@
 	"usuario.h"
 	"entrenamiento.h"
 	"parcial1.h"
+	"recup1.h"
 
-1606704287 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.cpp
+1607034513 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -651,7 +649,7 @@
 	"validar.h"
 	"parcial1.h"
 
-1606704287 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.h
+1607031584 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.h
 
 1607025345 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\parcial1.h
 
@@ -688,4 +686,22 @@
 	"recup1.h"
 
 1607013465 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\recup1.h
+
+1607030786 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\recup1.h
+
+1607030786 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\recup1.cpp
+	<iostream>
+	<windows.h>
+	"ui.h"
+	"rlutil.h"
+	<stdio.h>
+	<string.h>
+	<iomanip>
+	"menu.h"
+	"cartel.h"
+	"fecha.h"
+	"usuario.h"
+	"entrenamiento.h"
+	"validar.h"
+	"recup1.h"
 
