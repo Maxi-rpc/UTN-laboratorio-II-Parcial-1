@@ -501,7 +501,7 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1607013464 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+1607025830 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -510,6 +510,7 @@
 	<string.h>
 	"menu.h"
 	"cartel.h"
+	"parcial1.h"
 
 1605903633 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\carteles.h
 
