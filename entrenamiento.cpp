@@ -39,7 +39,7 @@ void mostrarEnt(Entrenamiento reg, int modo){
     }
     int col = 2;
     if(modo == 1){ //MODO 1 PARA ENTRENAMIENTO LISTAR
-        int ancho1 = 13;
+        int ancho1 = 11;
         cout << setw(4) << reg.id;
         cout << setw(col) << " ";
         cout << setw(ancho1) << reg.idUsuario;

@@ -115,10 +115,10 @@ void cListar(int modo){
         cout << setw(7) << "ESTADO";
     }
     if(modo == 2){ //MODO 2 PARA ENTRENAMIENTO
-        int ancho2 = 13;
+        int ancho2 = 11;
         cout << setw(4) << "ID";
         cout << setw(col) << " ";
-        cout << setw(ancho2) << "ID USUARIO";
+        cout << setw(ancho2) << "IDUSUARIO";
         cout << setw(col) << " ";
         cout << setw(11) << "FECHA";
         cout << setw(col) << " ";
