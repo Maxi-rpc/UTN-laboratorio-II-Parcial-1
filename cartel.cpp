@@ -82,6 +82,21 @@ void cMenuEntrenamiento(){
     cout << "> ";
 }
 
+void cMenuReporte(){
+    cTitulo("MENÚ REPORTES");
+    cout << "PRIMER PARCIAL" << endl;
+    cout << "1) PUNTO UNO" << endl;
+    cout << "2) PUNTO DOS" << endl;
+    cLinea();
+    cout << "*RECUPERATORIO PRIMER PARCIAL" << endl;
+    cout << "3) PUNTO UNO" << endl;
+    cout << "4) PUNTO DOS" << endl;
+    cLinea();
+    cout << "0) SALIR DEL PROGRAMA" << endl;
+    cout << endl;
+    cout << "> ";
+}
+
 void cMenuConfiguracion(){
     cTitulo("MENÚ CONFIGURACIÓN");
     cout << "1) REALIZAR COPIA DE SEGURIDAD" << endl;
@@ -131,15 +146,4 @@ void cListar(int modo){
     cLinea(100,1);
 }
 
-void cMenuReporte(){
-    cTitulo("MENÚ REPORTES");
-    cout << "1er PARCIAL" << endl;
-    cout << "1) PUNTO UNO" << endl;
-    cout << "2) PUNTO DOS" << endl;
-    cLinea();
-    cout << "RECUPERATORIO 1er PARCIAL" << endl;
-    cLinea();
-    cout << "0) SALIR DEL PROGRAMA" << endl;
-    cout << endl;
-    cout << "> ";
-}
+

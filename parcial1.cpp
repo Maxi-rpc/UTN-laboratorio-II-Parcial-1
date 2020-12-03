@@ -15,10 +15,6 @@ using namespace std;
 
 #include "parcial1.h"
 
-/// A partir de un IDUsuario que se ingresa por teclado, listar todos los códigos de actividades que no haya realizado nunca.
-
-
-
 void puntoUno(){
     int id, pos;
     cTitulo("PUNTO UNO");

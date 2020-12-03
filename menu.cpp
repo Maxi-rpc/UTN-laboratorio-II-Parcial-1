@@ -136,6 +136,12 @@ void menuReporte(){
             case 2:
                 puntoDos();
             break;
+            case 3:
+                puntoUno();
+            break;
+            case 4:
+                puntoDos();
+            break;
             case 0:
                 menu = false;
             break;
