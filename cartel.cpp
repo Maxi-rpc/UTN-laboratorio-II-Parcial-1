@@ -130,3 +130,16 @@ void cListar(int modo){
     }
     cLinea(100,1);
 }
+
+void cMenuReporte(){
+    cTitulo("MENÚ REPORTES");
+    cout << "1er PARCIAL" << endl;
+    cout << "1) PUNTO UNO" << endl;
+    cout << "2) PUNTO DOS" << endl;
+    cLinea();
+    cout << "RECUPERATORIO 1er PARCIAL" << endl;
+    cLinea();
+    cout << "0) SALIR DEL PROGRAMA" << endl;
+    cout << endl;
+    cout << "> ";
+}

@@ -1,5 +1,5 @@
 #include <iostream>
-#include <windows.h> ///Para funciones system
+#include <windows.h>
 #include "ui.h"
 #include "rlutil.h"
 #include <stdio.h>

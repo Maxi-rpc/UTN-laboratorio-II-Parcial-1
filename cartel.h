@@ -11,6 +11,7 @@ void cMenu();
 void cMenuUsuario();
 void cMenuEntrenamiento();
 void cMenuConfiguracion();
+void cMenuReporte();
 // LISTAR
 void cListar(int modo);
 #endif // CARTEL_H_INCLUDED

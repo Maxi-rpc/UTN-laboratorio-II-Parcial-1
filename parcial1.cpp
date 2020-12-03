@@ -1,5 +1,5 @@
 #include <iostream>
-#include <windows.h> ///Para funciones system
+#include <windows.h>
 #include "ui.h"
 #include "rlutil.h"
 #include <stdio.h>
@@ -7,7 +7,6 @@
 using namespace std;
 #include <iomanip>
 #include "menu.h"
-/// ELIMINAR ESTOS INCLUDES
 #include "cartel.h"
 #include "fecha.h"
 #include "usuario.h"
@@ -18,15 +17,7 @@ using namespace std;
 
 /// A partir de un IDUsuario que se ingresa por teclado, listar todos los códigos de actividades que no haya realizado nunca.
 
-void cMenuReporte(){
-    cTitulo("MENÚ REPORTES");
-    cout << "1) PUNTO UNO" << endl;
-    cout << "2) PUNTO DOS" << endl;
-    cLinea();
-    cout << "0) SALIR DEL PROGRAMA" << endl;
-    cout << endl;
-    cout << "> ";
-}
+
 
 void puntoUno(){
     int id, pos;
