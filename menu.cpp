@@ -148,6 +148,12 @@ void menuReporte(){
                 punto1A();
             break;
             case 6:
+                punto1B();
+            break;
+            case 7:
+                punto2A();
+            break;
+            case 8:
                 punto2B();
             break;
             case 0:

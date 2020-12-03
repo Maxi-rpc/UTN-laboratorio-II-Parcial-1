@@ -94,7 +94,9 @@ void cMenuReporte(){
     cLinea();
     cout << "*PRACTICAS" << endl;
     cout << "5) PUNTO UNO A" << endl;
-    cout << "6) PUNTO DOS B" << endl;
+    cout << "6) PUNTO UNO B" << endl;
+    cout << "7) PUNTO DOS A" << endl;
+    cout << "8) PUNTO DOS B" << endl;
     cLinea();
     cout << "0) SALIR DEL PROGRAMA" << endl;
     cout << endl;

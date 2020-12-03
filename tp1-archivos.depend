@@ -519,7 +519,7 @@
 	"rlutil.h"
 	"carteles.h"
 
-1607021098 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
+1607025650 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
 	<iostream>
 	<windows.h>
 	<time.h>
@@ -537,7 +537,7 @@
 
 1607013464 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.h
 
-1607015238 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
+1607022099 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
 	<iostream>
 	<windows.h>
 	<iomanip>
@@ -652,9 +652,9 @@
 
 1606704287 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.h
 
-1607021120 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\parcial1.h
+1607025345 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\parcial1.h
 
-1607008920 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\parcial1.cpp
+1607025650 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\parcial1.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"

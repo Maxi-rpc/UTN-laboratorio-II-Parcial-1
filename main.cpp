@@ -9,7 +9,7 @@ using namespace std;
 #include "cartel.h"
 
 /// TP CREADO DE CERO INDIVIDUALMENTE POR MAXIMILIANO MIRANDA
-
+#include "parcial1.h"
 int main()
 {
     int modoDev = 0; // Default 0 , inicia el programa normal, valor 1 inicia el modo de test
@@ -20,7 +20,8 @@ int main()
         initUI();
         cTitulo("ESTAS EN MODO DEV PARA PRUEBAS");
         // INGRESAR DESARROLLO DE FUNCIONES PARA TEST
-        cBarraProgreso();
+        int prom = promedioTiempo(1000);
+        cout << prom;
 
     } // FINALIZA EL MODO TEST
 

@@ -95,6 +95,7 @@ void listarPunto2(){
     cLinea(100,1);
 }
 
+/// PRACTICAS PARA RECUPERATORIO
 void punto1A(){
     int id, pos;
     cTitulo("PUNTO 1 A");
@@ -136,8 +137,8 @@ void listarCalFec(int idUsuario){
     cout << "FECHA: " << faux.dia << "/" << faux.mes << "/" << faux.anio << endl;
 }
 
-void punto2B(){
-    cTitulo("PUNTO 2 A");
+void punto1B(){
+    cTitulo("PUNTO 1 B");
     cout << "*Por cada tipo de actividad, listar la cantidad de entrenamientos discriminado por perfil de usuario."<<endl;
     int col=2;
     cout << setw(2) << "N°";
@@ -179,4 +180,82 @@ void listarCantPorPerfil(){
         cout << setw(4) << act[v][2];
         cLinea(100,1);
     }
+}
+
+void punto2A(){
+    cTitulo("PUNTO 2 A");
+    cout << "*Para cada perfil, indicar el promedio de peso."<<endl;
+    int col=2;
+    cout << setw(4) << "A";
+    cout << setw(col) << " ";
+    cout << setw(4) << "B";
+    cout << setw(col) << " ";
+    cout << setw(4) << "C";
+    cLinea(100,1);
+    promPeso();
+    cMsj(6);
+}
+
+void promPeso(){
+    float promedio[3]={};
+    int total[3]={};
+    int cant = cantidadUsuarios();
+    for(int i=0; i<cant; i++){
+        Usuario user = leerUsuario(i);
+        if(user.perfilActividad == 'A' || user.perfilActividad == 'a'){
+            promedio[0] += user.peso;
+            total[0]++;
+        }
+        if(user.perfilActividad == 'B' || user.perfilActividad == 'b'){
+            promedio[1] += user.peso;
+            total[1]++;
+        }
+        if(user.perfilActividad == 'C' || user.perfilActividad == 'c'){
+            promedio[2] += user.peso;
+            total[2]++;
+        }
+    }
+    for(int v=0; v<3; v++){
+        promedio[v] = promedio[v] / total[v];
+        cout << setw(4) << promedio[v];
+        cout << setw(2) << " ";
+    }
+    cLinea(100,1);
+}
+
+void punto2B(){
+    cTitulo("PUNTO 2 B");
+    cout << "*Listar apellidos y nombres del usuario que más tiempo en promedio haya entrenado."<<endl;
+    promMayorTiempo();
+    cMsj(6);
+}
+
+void promMayorTiempo(){
+    int cantUser = cantidadUsuarios(), mayor=0, prom=0;
+    Usuario auxUser;
+    for(int i=0; i<cantUser; i++){
+        Usuario user = leerUsuario(i);
+        prom = promedioTiempo(user.id);
+        if(prom > mayor){
+            mayor = prom;
+            strcpy(auxUser.nombres,user.nombres);
+            strcpy(auxUser.apellidos,user.apellidos);
+        }
+    }
+    //cout << "NOMBRES: " << auxUser.nombres << endl;
+    //cout << "APELLIDOS: " << auxUser.apellidos << endl;
+    cout << "MAYOR TIEMPO PROMEDIO: " << mayor << endl;
+}
+
+int promedioTiempo(int id){
+    int canEn = cantidadEntren(), total=0, prom=0;
+    for(int i=0; i<canEn; i++){
+        Entrenamiento reg = leerEntren(i);
+        if(reg.idUsuario == id){
+            total++;
+            prom += reg.tiempo;
+        }
+    }
+    prom = prom / total;
+    return prom;
 }
