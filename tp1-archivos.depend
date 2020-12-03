@@ -386,7 +386,19 @@
 	"strUsuario.h"
 	"entrenamiento.h"
 
-1606772023 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+1606967571 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+	<iostream>
+	<windows.h>
+	"ui.h"
+	"rlutil.h"
+	<stdio.h>
+	<string.h>
+	"menu.h"
+	"cartel.h"
+	"fecha.h"
+	"usuario.h"
+	"entrenamiento.h"
+	"validar.h"
 
 1606704287 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\ui.cpp
 	<iostream>

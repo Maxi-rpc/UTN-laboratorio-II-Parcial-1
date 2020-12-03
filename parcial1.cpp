@@ -29,7 +29,7 @@ void cMenuReporte(){
 }
 
 void puntoUno(){
-    int id, pos, cant = cantidadUsuarios();
+    int id, pos;
     cTitulo("PUNTO UNO");
     cout << "A partir de un IDUsuario que se ingresa por teclado, listar todos los códigos de actividades que no haya realizado nunca."<<endl;
     cout << "> ";
