@@ -133,15 +133,9 @@ void menuReporte(){
         }
         switch(opc){
             case 1:
-                puntoUno();
-            break;
-            case 2:
-                puntoDos();
-            break;
-            case 3:
                 recPuntoUno();
             break;
-            case 4:
+            case 2:
                 recPuntoDos();
             break;
             case 0:

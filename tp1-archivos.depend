@@ -386,7 +386,7 @@
 	"strUsuario.h"
 	"entrenamiento.h"
 
-1607035063 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+1607038789 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -395,6 +395,7 @@
 	<string.h>
 	"menu.h"
 	"cartel.h"
+	"usuario.h"
 
 1606704287 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\ui.cpp
 	<iostream>
@@ -685,9 +686,9 @@
 
 1607009207 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\recup1.h
 
-1607037263 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\recup1.h
+1607038569 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\recup1.h
 
-1607030786 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\recup1.cpp
+1607038673 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\recup1.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -695,11 +696,9 @@
 	<stdio.h>
 	<string.h>
 	<iomanip>
-	"menu.h"
 	"cartel.h"
 	"fecha.h"
 	"usuario.h"
 	"entrenamiento.h"
-	"validar.h"
 	"recup1.h"
 

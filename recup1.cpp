@@ -12,12 +12,13 @@ using namespace std;
 #include "entrenamiento.h"
 
 #include "recup1.h"
+// PROFE POR FAVOR VER CONFIGURACION Y BACKUP PORQUE HICE UNA ANIMACION COPADA JAJA
 
 void recPuntoUno(){
     cTitulo("RECUPERATORIO PUNTO UNO");
     cout << "*Listar todos los usuarios cuya altura supere la altura promedio de los usuarios de perfil 'B'." << endl;
     cout << endl;
-    listarPunto1();
+    listarRecPunto1();
     float promedio = promAlturaB();
     int cant = cantidadUsuarios(), col=2;
     for(int i=0; i<cant; i++){
@@ -34,7 +35,7 @@ void recPuntoUno(){
     cMsj(6); // ELIMINAR SI NO ES NECESARIO
 }
 
-void listarPunto1(){
+void listarRecPunto1(){
     int col = 2;
     cout << setw(15) << "NOMBRES";
     cout << setw(col) << " ";
@@ -61,7 +62,58 @@ float promAlturaB(){
 
 void recPuntoDos(){
     cTitulo("RECUPERATORIO PUNTO DOS");
-    cout << "*CONSIGNA" << endl;
-
+    cout << "*Listar apellidos y nombres del usuario que más tiempo en promedio haya entrenado." << endl;
+    cout << endl;
+    int id = mayorTiempoPromedio(), col=2;
+    int prom = promedioTiempo(id);
+    listarRecPunto2();
+    int pos = buscarUsuario(id);
+    Usuario reg = leerUsuario(pos);
+    cout << setw(15) << reg.nombres;
+    cout << setw(col) << " ";
+    cout << setw(15) << reg.apellidos;
+    cout << setw(col) << " ";
+    cout << setw(9) << prom;
+    cLinea(100,1);
     cMsj(6); // ELIMINAR SI NO ES NECESARIO
+}
+
+void listarRecPunto2(){
+    int col = 2;
+    cout << setw(15) << "NOMBRES";
+    cout << setw(col) << " ";
+    cout << setw(15) << "APELLIDOS";
+    cout << setw(col) << " ";
+    cout << setw(9) << "PROMEDIO";
+    cLinea(100,1);
+}
+
+int mayorTiempoPromedio(){
+    int mayProm = 0, prom=0, cantEnt = cantidadEntren();
+    int id=0;
+    Entrenamiento reg;
+    for(int i=0; i<cantEnt; i++){
+        reg = leerEntren(i);
+        prom = promedioTiempo(reg.idUsuario);
+        if(prom > mayProm){
+            mayProm = prom;
+            id = reg.idUsuario;
+        }
+    }
+    //cout << "ID: " << id << endl;
+    //cout << "PROM: " << mayProm << endl;
+    return id;
+}
+
+int promedioTiempo(int id){
+    int canEn = cantidadEntren(), total=0, prom=0;
+    for(int i=0; i<canEn; i++){
+        Entrenamiento reg = leerEntren(i);
+        if(reg.idUsuario == id){
+            total++;
+            prom += reg.tiempo;
+        }
+    }
+    prom = prom / total;
+    return prom;
 }

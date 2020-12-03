@@ -84,13 +84,9 @@ void cMenuEntrenamiento(){
 
 void cMenuReporte(){
     cTitulo("MENÚ REPORTES");
-    cout << "PRIMER PARCIAL" << endl;
+    cout << "*RECUPERATORIO PRIMER PARCIAL" << endl;
     cout << "1) PUNTO UNO" << endl;
     cout << "2) PUNTO DOS" << endl;
-    cLinea();
-    cout << "*RECUPERATORIO PRIMER PARCIAL" << endl;
-    cout << "3) PUNTO UNO" << endl;
-    cout << "4) PUNTO DOS" << endl;
     cLinea();
     cout << "0) SALIR DEL PROGRAMA" << endl;
     cout << endl;
