@@ -10,8 +10,10 @@ using namespace std;
 // STRUCT
 #include "usuario.h"
 #include "entrenamiento.h"
-// PARCIAL LAB 24/9/2020
+// PARCIAL LAB II 24/9/2020
 #include "parcial1.h"
+// RECUPERATORIO PARCIAL LAB II 3/12/2020
+#include "recup1.h"
 
 void menuPrincipal(){
     bool menu = true;
@@ -137,10 +139,10 @@ void menuReporte(){
                 puntoDos();
             break;
             case 3:
-                puntoUno();
+                recPuntoUno();
             break;
             case 4:
-                puntoDos();
+                recPuntoDos();
             break;
             case 0:
                 menu = false;

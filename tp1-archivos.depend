@@ -519,7 +519,7 @@
 	"rlutil.h"
 	"carteles.h"
 
-1607008488 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
+1607009361 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
 	<iostream>
 	<windows.h>
 	<time.h>
@@ -531,6 +531,7 @@
 	"usuario.h"
 	"entrenamiento.h"
 	"parcial1.h"
+	"recup1.h"
 
 1607003872 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.h
 
@@ -653,7 +654,7 @@
 
 1607004708 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\parcial1.h
 
-1607005126 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\parcial1.cpp
+1607008920 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\parcial1.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -668,4 +669,22 @@
 	"entrenamiento.h"
 	"validar.h"
 	"parcial1.h"
+
+1607009207 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\recup1.cpp
+	<iostream>
+	<windows.h>
+	"ui.h"
+	"rlutil.h"
+	<stdio.h>
+	<string.h>
+	<iomanip>
+	"menu.h"
+	"cartel.h"
+	"fecha.h"
+	"usuario.h"
+	"entrenamiento.h"
+	"validar.h"
+	"recup1.h"
+
+1607009207 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\recup1.h
 

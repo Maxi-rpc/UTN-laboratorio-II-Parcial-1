@@ -43,6 +43,8 @@
 		<Unit filename="menu.h" />
 		<Unit filename="parcial1.cpp" />
 		<Unit filename="parcial1.h" />
+		<Unit filename="recup1.cpp" />
+		<Unit filename="recup1.h" />
 		<Unit filename="rlutil.h" />
 		<Unit filename="ui.cpp" />
 		<Unit filename="ui.h" />
