@@ -18,7 +18,7 @@ using namespace std;
 void puntoUno(){
     int id, pos;
     cTitulo("PUNTO UNO");
-    cout << "A partir de un IDUsuario que se ingresa por teclado, listar todos los códigos de actividades que no haya realizado nunca."<<endl;
+    cout << "*A partir de un IDUsuario que se ingresa por teclado, listar todos los códigos de actividades que no haya realizado nunca."<<endl;
     cout << "> ";
     cin >> id;
     cLinea();
@@ -26,7 +26,9 @@ void puntoUno(){
     if(pos >= 0){
         Usuario user = leerUsuario(pos);
         if(user.estado == true){
-            cout << user.id << "," << user.nombres << "," << user.apellidos << endl;
+            cout << "IDUSUARIO: " << user.id << endl;
+            cout << "NOMBRES: " << user.nombres << endl;
+            cout << "APELLIDOS: " << user.apellidos << endl;
             cout << "ACTIVIDAD NO REALIZADA: ";
             listarActividadNo(id);
             cMsj(6);
@@ -46,7 +48,7 @@ void listarActividadNo(int idUsuario){
     }
     for(int v=0; v<5; v++){
         if(act[v] == 0){
-            cout << actividad[v] << ",";
+            cout << actividad[v] << "-";
         }
     }
 }
@@ -55,7 +57,7 @@ void puntoDos(){
     int cant = cantidadUsuarios(), col=2;
     float calorias=0;
     cTitulo("PUNTO DOS");
-    cout << "Por cada usuario, listar los Apellidos y nombres y la cantidad total de calorías quemadas." << endl;
+    cout << "*Por cada usuario, listar los Apellidos y nombres y la cantidad total de calorías quemadas." << endl;
     cout << endl;
     listarPunto2();
     for(int i=0; i<cant; i++){
