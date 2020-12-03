@@ -146,4 +146,31 @@ void cListar(int modo){
     cLinea(100,1);
 }
 
-
+void cBarraProgreso(){
+    int porcentaje = 0;
+    gotoxy(43,10);
+    cout << "CARGANDO...";
+    for(int a=0; a<=100; a++){
+        gotoxy(54,10);
+        cout << a << "%";
+        for(int b=50; b<80; b++){
+            for(int c=1; c<80; c++){
+                gotoxy(54,10);
+            }
+        }
+    }
+    // BARRA DE PROGRESO
+    for(int i=1; i<100; i++){
+        gotoxy(i,13);
+        setColors(rlutil::WHITE, rlutil::BLUE);
+        printf("_");
+        for(int x=50; x<70; x++){
+            for(int y=1; y<70; y++){
+                gotoxy(y,24);
+            }
+        }
+    }
+    rlutil::resetColor();
+    setColors(APP_FORECOLOR, APP_BACKCOLOR);
+    // FIN BARRA DE PROGRESO
+}

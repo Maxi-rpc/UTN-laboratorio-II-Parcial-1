@@ -20,7 +20,7 @@ int main()
         initUI();
         cTitulo("ESTAS EN MODO DEV PARA PRUEBAS");
         // INGRESAR DESARROLLO DE FUNCIONES PARA TEST
-
+        cBarraProgreso();
 
     } // FINALIZA EL MODO TEST
 

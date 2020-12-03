@@ -27,6 +27,7 @@ void puntoUno(){
         Usuario user = leerUsuario(pos);
         if(user.estado == true){
             cout << user.id << "," << user.nombres << "," << user.apellidos << endl;
+            cout << "ACTIVIDAD NO REALIZADA: ";
             listarActividadNo(id);
             cMsj(6);
         }else{cMsj(7);}

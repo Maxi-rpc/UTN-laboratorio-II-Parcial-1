@@ -314,7 +314,10 @@ void realizarCopSeguridad(){
     if(conf == numR){
         exito += copiaSeguridadUsuario();
         exito += copiaSeguridadEnt();
-        if(exito == 2){cMsj(8);}
+        if(exito == 2){
+            cBarraProgreso();
+            cMsj(8);
+        }
         else{cMsj(9);}
     }else{cMsj(12);}
 }
@@ -328,7 +331,10 @@ void recupCopSeguridad(){
     if(conf == numR){
         exito += recCopiaSeguridadUsuario();
         exito += recCopiaSeguridadEnt();
-        if(exito == 2){cMsj(10);}
+        if(exito == 2){
+            cBarraProgreso();
+            cMsj(10);
+        }
         else{cMsj(11);}
     }else{cMsj(12);}
 }
