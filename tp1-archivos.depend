@@ -231,9 +231,9 @@
 	"entrenamiento.h"
 	"ui.h"
 
-1606703424 D
+1606704287 D
 
-1606704287 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
+1606967577 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.cpp
 	<iostream>
 	<string.h>
 	<iomanip>
@@ -243,7 +243,7 @@
 	"cartel.h"
 	"validar.h"
 
-1606701580 
+1606772023 
 	<iostream>
 	<string.h>
 	<iomanip>
@@ -341,6 +341,19 @@
 	"usuario.h"
 	"entrenamiento.h"
 	"parcial1.h"
+	<iostream>
+	<windows.h>
+	"ui.h"
+	"rlutil.h"
+	<stdio.h>
+	<string.h>
+	"menu.h"
+	"cartel.h"
+	"fecha.h"
+	"usuario.h"
+	"entrenamiento.h"
+	"validar.h"
+	"fecha.h"
 
 1606693818 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\entrenamiento.h
 	"fecha.h"
@@ -373,19 +386,7 @@
 	"strUsuario.h"
 	"entrenamiento.h"
 
-1606704287 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
-	<iostream>
-	<windows.h>
-	"ui.h"
-	"rlutil.h"
-	<stdio.h>
-	<string.h>
-	"menu.h"
-	"cartel.h"
-	"fecha.h"
-	"usuario.h"
-	"entrenamiento.h"
-	"validar.h"
+1606772023 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
 
 1606704287 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\ui.cpp
 	<iostream>
@@ -523,7 +524,7 @@
 
 1606488930 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\validar.h
 
-1606693856 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
+1606967577 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
 	<iostream>
 	<windows.h>
 	<iomanip>
@@ -531,11 +532,11 @@
 	"rlutil.h"
 	"cartel.h"
 
-1606704287 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\cartel.h
+1606967571 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\cartel.h
 
 1606693818 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\fecha.h
 
-1606704271 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\usuario.h
+1606967571 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\usuario.h
 	"fecha.h"
 
 1606704287 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\validar.h
@@ -548,7 +549,7 @@
 	"validar.h"
 	"cartel.h"
 
-1606704287 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\menu.h
+1606967571 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\menu.h
 
 1606693968 source:c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\usuario.cpp
 	<iostream>
