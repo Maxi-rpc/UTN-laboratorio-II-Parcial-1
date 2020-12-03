@@ -144,6 +144,12 @@ void menuReporte(){
             case 4:
                 recPuntoDos();
             break;
+            case 5:
+                punto1A();
+            break;
+            case 6:
+                punto2B();
+            break;
             case 0:
                 menu = false;
             break;

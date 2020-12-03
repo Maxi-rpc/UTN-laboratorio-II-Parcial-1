@@ -501,7 +501,7 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1607008272 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
+1607013464 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\main.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -519,7 +519,7 @@
 	"rlutil.h"
 	"carteles.h"
 
-1607009361 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
+1607021098 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.cpp
 	<iostream>
 	<windows.h>
 	<time.h>
@@ -533,11 +533,11 @@
 	"parcial1.h"
 	"recup1.h"
 
-1607003872 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.h
+1607013464 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\menu.h
 
-1607006589 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.h
+1607013464 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.h
 
-1607008081 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
+1607015238 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\cartel.cpp
 	<iostream>
 	<windows.h>
 	<iomanip>
@@ -555,7 +555,7 @@
 
 1606414598 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\fecha.h
 
-1607003872 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\usuario.h
+1607013465 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\usuario.h
 	"fecha.h"
 
 1606502987 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\usuario.cpp
@@ -652,7 +652,7 @@
 
 1606704287 c:\users\maxi\documents\github\utn-laboratorio-ii-parcial-1\parcial1.h
 
-1607004708 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\parcial1.h
+1607021120 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\parcial1.h
 
 1607008920 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\parcial1.cpp
 	<iostream>
@@ -670,7 +670,7 @@
 	"validar.h"
 	"parcial1.h"
 
-1607009207 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\recup1.cpp
+1607013465 source:c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\recup1.cpp
 	<iostream>
 	<windows.h>
 	"ui.h"
@@ -686,5 +686,5 @@
 	"validar.h"
 	"recup1.h"
 
-1607009207 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\recup1.h
+1607013465 c:\users\tivit\documents\github\utn-laboratorio-ii-parcial-1\recup1.h
 
