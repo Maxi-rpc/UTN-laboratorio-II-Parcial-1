@@ -18,12 +18,16 @@ void recPuntoUno(){
     cTitulo("RECUPERATORIO PUNTO UNO");
     cout << "*Listar todos los usuarios cuya altura supere la altura promedio de los usuarios de perfil 'B'." << endl;
     cout << endl;
-    listarRecPunto1();
     float promedio = promAlturaB();
+    cout << "PROMEDIO DE ALTURA DE LOS PERFILES B: " << promedio << endl;
+    cout << endl;
+    listarRecPunto1();
     int cant = cantidadUsuarios(), col=2;
     for(int i=0; i<cant; i++){
         Usuario user = leerUsuario(i);
         if(user.altura > promedio){
+            cout << setw(4) << user.id;
+            cout << setw(col) << " ";
             cout << setw(15) << user.nombres;
             cout << setw(col) << " ";
             cout << setw(15) << user.apellidos;
@@ -37,6 +41,8 @@ void recPuntoUno(){
 
 void listarRecPunto1(){
     int col = 2;
+    cout << setw(4) << "ID";
+    cout << setw(col) << " ";
     cout << setw(15) << "NOMBRES";
     cout << setw(col) << " ";
     cout << setw(15) << "APELLIDOS";
@@ -69,9 +75,9 @@ void recPuntoDos(){
     listarRecPunto2();
     int pos = buscarUsuario(id);
     Usuario reg = leerUsuario(pos);
-    cout << setw(15) << reg.nombres;
-    cout << setw(col) << " ";
     cout << setw(15) << reg.apellidos;
+    cout << setw(col) << " ";
+    cout << setw(15) << reg.nombres;
     cout << setw(col) << " ";
     cout << setw(9) << prom;
     cLinea(100,1);
@@ -80,9 +86,9 @@ void recPuntoDos(){
 
 void listarRecPunto2(){
     int col = 2;
-    cout << setw(15) << "NOMBRES";
-    cout << setw(col) << " ";
     cout << setw(15) << "APELLIDOS";
+    cout << setw(col) << " ";
+    cout << setw(15) << "NOMBRES";
     cout << setw(col) << " ";
     cout << setw(9) << "PROMEDIO";
     cLinea(100,1);
@@ -100,8 +106,6 @@ int mayorTiempoPromedio(){
             id = reg.idUsuario;
         }
     }
-    //cout << "ID: " << id << endl;
-    //cout << "PROM: " << mayProm << endl;
     return id;
 }
 
@@ -117,3 +121,4 @@ int promedioTiempo(int id){
     prom = prom / total;
     return prom;
 }
+

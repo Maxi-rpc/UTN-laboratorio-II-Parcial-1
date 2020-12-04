@@ -7,9 +7,11 @@
 using namespace std;
 #include "menu.h"
 #include "cartel.h"
-#include "usuario.h"
+
 /// TP CREADO DE CERO INDIVIDUALMENTE POR MAXIMILIANO MIRANDA
 // PROFE POR FAVOR VER CONFIGURACION Y BACKUP PORQUE HICE UNA ANIMACION COPADA JAJA
+
+
 int main()
 {
     int modoDev = 0; // Default 0 , inicia el programa normal, valor 1 inicia el modo de test
