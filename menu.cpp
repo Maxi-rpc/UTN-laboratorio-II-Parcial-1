@@ -10,8 +10,6 @@ using namespace std;
 // STRUCT
 #include "usuario.h"
 #include "entrenamiento.h"
-// PARCIAL LAB II 24/9/2020
-#include "parcial1.h"
 // RECUPERATORIO PARCIAL LAB II 3/12/2020
 #include "recup1.h"
 

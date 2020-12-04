@@ -20,7 +20,7 @@ void listarEntrenamientoPorID();
 void listarEntrenamientoPorIDUsuario();
 void listarTodoLosEntrenamientos();
 // SUB MENU REPORTE
-void puntoUno();
+
 
 // SUB MENU CONFIGURACION
 void realizarCopSeguridad();
